@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/baseStation.dir/Server.cpp.o CMakeFiles/baseStation.dir/main.cpp.o -o baseStation 
