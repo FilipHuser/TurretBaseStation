@@ -21,7 +21,8 @@ struct Client{
 class Server{
 public:
     Server();
-    void* receiveData(void* arg);
+    void* receiveData();
+    static void* receiveDataStatic(void* context);
 
 private:
     int serverSocket;

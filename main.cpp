@@ -1,15 +1,18 @@
 #include <iostream>
 
 #include "Server.h"
+#include "ThreadsManager.h"
 
 int main(int argc , char* argv[])
 {
     Server ser;
+    ThreadsManager tm;
 
-    while(1)
-    {
-        ser.receiveData();
-    }
+    tm.createThread(&ser.receiveDataStatic , &ser);
+    
+
+
+    while(1);
 
     return 0;
 }

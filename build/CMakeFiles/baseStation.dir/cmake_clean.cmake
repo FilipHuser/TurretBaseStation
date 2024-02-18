@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/baseStation.dir/Server.cpp.o"
   "CMakeFiles/baseStation.dir/Server.cpp.o.d"
+  "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o"
+  "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o.d"
   "CMakeFiles/baseStation.dir/main.cpp.o"
   "CMakeFiles/baseStation.dir/main.cpp.o.d"
   "baseStation"

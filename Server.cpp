@@ -1,5 +1,10 @@
 #include "Server.h"
 
+void* Server::receiveDataStatic(void* context)
+{
+    return ((Server*)context)->receiveData();
+}
+
 Server::Server() : serverSocket(-1)
 {
     if((this->serverSocket = socket(AF_INET , SOCK_DGRAM , 0)) < 0)
@@ -17,31 +22,26 @@ Server::Server() : serverSocket(-1)
         perror("bind");
         exit(EXIT_FAILURE);
     }
-
-    pthread_t com_thread;
-
-    pthread_create(&com_thread , NULL , &Server::receiveData , this);
-
-
-
-
 }
 
-void* Server::receiveData(void* arg) {
+void* Server::receiveData()
+{
     char buffer[1024];
     struct sockaddr_in client_address;
     socklen_t addr_len = sizeof(client_address);
 
-    ssize_t received_bytes = recvfrom(this->serverSocket, buffer, sizeof(buffer), 0,
-                                      (struct sockaddr*)&client_address, &addr_len);
-    if (received_bytes < 0) {
-        perror("recvfrom");
-        exit(EXIT_FAILURE);
+    while (true)
+    {
+        ssize_t received_bytes = recvfrom(this->serverSocket, buffer, sizeof(buffer), 0,
+                                          (struct sockaddr*)&client_address, &addr_len);
+        if (received_bytes < 0)
+        {
+            perror("recvfrom");
+            exit(EXIT_FAILURE);
+        }
+
+        std::cout << "Received data from client: " << buffer << std::endl;
     }
 
-    buffer[received_bytes] = '\0';
-    
-    std::cout << "Received data from client: " << buffer << std::endl;
-
-    pthread_exit(NULL);
+    pthread_exit(nullptr);
 }

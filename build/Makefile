@@ -198,6 +198,30 @@ Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Server.cpp.s
 .PHONY : Server.cpp.s
 
+ThreadsManager.o: ThreadsManager.cpp.o
+.PHONY : ThreadsManager.o
+
+# target to build an object file
+ThreadsManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ThreadsManager.cpp.o
+.PHONY : ThreadsManager.cpp.o
+
+ThreadsManager.i: ThreadsManager.cpp.i
+.PHONY : ThreadsManager.i
+
+# target to preprocess a source file
+ThreadsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ThreadsManager.cpp.i
+.PHONY : ThreadsManager.cpp.i
+
+ThreadsManager.s: ThreadsManager.cpp.s
+.PHONY : ThreadsManager.s
+
+# target to generate assembly for a file
+ThreadsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ThreadsManager.cpp.s
+.PHONY : ThreadsManager.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -238,6 +262,9 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... ThreadsManager.o"
+	@echo "... ThreadsManager.i"
+	@echo "... ThreadsManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

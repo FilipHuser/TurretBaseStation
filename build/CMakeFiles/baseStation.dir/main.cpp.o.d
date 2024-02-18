@@ -178,4 +178,5 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
  /usr/include/c++/12/bits/vector.tcc \
- /home/filiphuser/Desktop/BaseStation/Config.h
+ /home/filiphuser/Desktop/BaseStation/Config.h \
+ /home/filiphuser/Desktop/BaseStation/ThreadsManager.h
