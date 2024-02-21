@@ -3,7 +3,10 @@
 
 //--------------------- SERVER ----------------------
 
-#define SERVER_PORT 12345
+#define SERVER_CAM_PORT 1025
+#define SERVER_COM_PORT 1026
+#define SERVER_SET_PORT 1027
+
 #define MAX_CLIENTS_QUEUE 5
 
 //---------------------------------------------------

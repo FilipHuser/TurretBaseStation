@@ -1,30 +1,48 @@
 #include "Server.h"
 
-void* Server::receiveDataStatic(void* context)
+Server::Server()
 {
-    return ((Server*)context)->receiveData();
+    createSocket(1025);     // CAM = camera socket
+    createSocket(1026);     // COM = communication socket
+    createSocket(1027);     // SET = settings socket
 }
 
-Server::Server() : serverSocket(-1)
+void Server::createSocket(int port)
 {
-    if((this->serverSocket = socket(AF_INET , SOCK_DGRAM , 0)) < 0)
+    struct sockaddr_in server_address;
+    int serverSocket = -1;
+
+    if((serverSocket = socket(AF_INET , SOCK_DGRAM , 0)) < 0)
     {
         perror("socket");
         exit(EXIT_FAILURE);
     }
 
-    this->server_address.sin_family = AF_INET;
-    this->server_address.sin_port = SERVER_PORT;
-    this->server_address.sin_addr.s_addr = INADDR_ANY;
+    server_address.sin_family = AF_INET;
+    server_address.sin_port = port;
+    server_address.sin_addr.s_addr = INADDR_ANY;
 
-    if(bind(this->serverSocket , (struct sockaddr*)&this->server_address , sizeof(this->server_address)) < 0)
+    if(bind(serverSocket , (struct sockaddr*)&server_address , sizeof(server_address)) < 0)
     {
         perror("bind");
         exit(EXIT_FAILURE);
     }
+
+    this->sockets.push_back(serverSocket);
 }
 
-void* Server::receiveData()
+
+void* Server::receiveDataStatic(void* context)
+{
+   std::pair<int , Server*>* args = static_cast<std::pair<int , Server*>*>(context); 
+
+    int socketIndex = args->first;
+    Server* server = args->second;
+
+    return server->receiveData(socketIndex);
+}
+
+void* Server::receiveData(int socketIndex)
 {
     char buffer[1024];
     struct sockaddr_in client_address;
@@ -32,7 +50,7 @@ void* Server::receiveData()
 
     while (true)
     {
-        ssize_t received_bytes = recvfrom(this->serverSocket, buffer, sizeof(buffer), 0,
+        ssize_t received_bytes = recvfrom(this->sockets[socketIndex], buffer, sizeof(buffer), 0,
                                           (struct sockaddr*)&client_address, &addr_len);
         if (received_bytes < 0)
         {
@@ -44,4 +62,12 @@ void* Server::receiveData()
     }
 
     pthread_exit(nullptr);
+}
+
+Server::~Server()
+{
+    for(auto& socket : this->sockets)
+    {
+            close(socket);
+    }
 }

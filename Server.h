@@ -11,6 +11,7 @@
 #include <vector>
 #include <pthread.h>
 
+#include "SharedData.h"
 #include "Config.h"
 
 struct Client{
@@ -21,12 +22,18 @@ struct Client{
 class Server{
 public:
     Server();
-    void* receiveData();
+
+    void createSocket(int port);
+
+    void* receiveData(int socketIndex);
     static void* receiveDataStatic(void* context);
 
-private:
-    int serverSocket;
-    struct sockaddr_in server_address;
+
+    ~Server();
+
+//private:
+    std::vector<int> sockets;
+    std::vector<SharedData> sharedDataContainers;
     std::vector<Client> clients;
 };
 
