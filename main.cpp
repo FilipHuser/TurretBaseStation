@@ -1,13 +1,21 @@
 #include <iostream>
+#include <mutex>
 
 #include "Server.h"
 #include "ThreadsManager.h"
+#include "ServerObserver.h"
+#include "EventHandler.h"
 
 //#include <opencv2/opencv.hpp>
 
 int main(int argc , char* argv[])
 {
     Server server;
+    EventHandler eh;
+
+    Observer* so = new ServerObserver(&eh);
+
+    server.attach(so);
 
     ThreadsManager tm;
 

@@ -2,14 +2,6 @@
 
 Server::Server()
 {
-    std::mutex cam_sd_mutex;
-    std::mutex com_sd_mutex;
-    std::mutex set_sd_mutex;
-
-    this->sharedDataContainers = std::vector<SharedData>{SharedData(cam_sd_mutex),
-                                                         SharedData(com_sd_mutex),
-                                                         SharedData(set_sd_mutex)};
-
     createSocket(SERVER_CAM_PORT);     // CAM = camera socket
     createSocket(SERVER_COM_PORT);     // COM = communication socket
     createSocket(SERVER_SET_PORT);     // SET = settings socket
@@ -61,7 +53,7 @@ void* Server::receiveData(int socketIndex)
     std::cout << "Listening on sokcet: " << this->sockets[socketIndex] << std::endl;
 
 
-    char buffer[1024];
+    char buffer[MAX_BUFFER_SIZE];
     struct sockaddr_in client_address;
     socklen_t addr_len = sizeof(client_address);
 
@@ -75,11 +67,19 @@ void* Server::receiveData(int socketIndex)
             exit(EXIT_FAILURE);
         }
 
-        this->sharedDataContainers[socketIndex].passData(buffer);
+        this->buffer_queue.push(std::vector<char>(buffer , buffer + received_bytes));
 
+        notify();
 
-        //std::cout << "Received data from client: " << buffer << std::endl;
+        memset(buffer , 0, sizeof(buffer));
     }
+}
+
+std::vector<char> Server::getBufferFromQueue()
+{
+    std::vector<char> buffer = this->buffer_queue.front();
+    this->buffer_queue.pop();
+    return buffer;
 }
 
 Server::~Server()

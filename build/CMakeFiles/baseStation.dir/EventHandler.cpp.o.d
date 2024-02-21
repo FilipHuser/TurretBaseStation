@@ -1,5 +1,7 @@
-CMakeFiles/baseStation.dir/main.cpp.o: \
- /home/filiphuser/Desktop/BaseStation/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/baseStation.dir/EventHandler.cpp.o: \
+ /home/filiphuser/Desktop/BaseStation/EventHandler.cpp \
+ /usr/include/stdc-predef.h \
+ /home/filiphuser/Desktop/BaseStation/EventHandler.h \
  /usr/include/c++/12/iostream \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -152,48 +154,8 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/mutex \
- /usr/include/c++/12/tuple /usr/include/c++/12/bits/uses_allocator.h \
- /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
- /usr/include/c++/12/limits /usr/include/c++/12/ctime \
- /usr/include/c++/12/bits/parse_numbers.h \
- /usr/include/c++/12/bits/std_mutex.h \
- /usr/include/c++/12/bits/unique_lock.h \
- /home/filiphuser/Desktop/BaseStation/Server.h /usr/include/c++/12/vector \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/vector \
  /usr/include/c++/12/bits/stl_uninitialized.h \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
- /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h /usr/include/netinet/in.h \
- /usr/include/aarch64-linux-gnu/sys/socket.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/aarch64-linux-gnu/bits/socket.h \
- /usr/include/aarch64-linux-gnu/bits/socket_type.h \
- /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
- /usr/include/aarch64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/aarch64-linux-gnu/asm/posix_types.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/aarch64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/c++/12/stdlib.h \
- /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /home/filiphuser/Desktop/BaseStation/Subject.h \
- /home/filiphuser/Desktop/BaseStation/Config.h \
- /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
- /home/filiphuser/Desktop/BaseStation/ServerObserver.h \
- /home/filiphuser/Desktop/BaseStation/Observer.h \
- /home/filiphuser/Desktop/BaseStation/EventHandler.h
+ /usr/include/c++/12/bits/vector.tcc

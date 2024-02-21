@@ -157,52 +157,15 @@ CMakeFiles/baseStation.dir/Server.cpp.o: \
  /usr/include/c++/12/bits/stl_uninitialized.h \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/memory \
- /usr/include/c++/12/bits/stl_tempbuf.h \
- /usr/include/c++/12/bits/stl_raw_storage_iter.h \
- /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
- /usr/include/c++/12/bits/uses_allocator.h \
- /usr/include/c++/12/bits/unique_ptr.h /usr/include/c++/12/tuple \
- /usr/include/c++/12/bits/shared_ptr.h \
- /usr/include/c++/12/bits/shared_ptr_base.h \
- /usr/include/c++/12/bits/allocated_ptr.h \
- /usr/include/c++/12/ext/aligned_buffer.h \
- /usr/include/c++/12/ext/concurrence.h \
- /usr/include/c++/12/bits/shared_ptr_atomic.h \
- /usr/include/c++/12/bits/atomic_base.h \
- /usr/include/c++/12/bits/atomic_lockfree_defines.h \
- /usr/include/c++/12/bits/atomic_wait.h /usr/include/c++/12/climits \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
- /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
- /usr/include/aarch64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
- /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
- /usr/include/aarch64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/aarch64-linux-gnu/sys/syscall.h \
- /usr/include/aarch64-linux-gnu/asm/unistd.h \
- /usr/include/asm-generic/unistd.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/aarch64-linux-gnu/bits/syscall.h \
+ /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/queue \
+ /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
+ /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/bits/stl_heap.h \
+ /usr/include/c++/12/bits/stl_queue.h \
+ /usr/include/c++/12/bits/uses_allocator.h /usr/include/c++/12/mutex \
+ /usr/include/c++/12/tuple /usr/include/c++/12/bits/chrono.h \
+ /usr/include/c++/12/ratio /usr/include/c++/12/limits \
+ /usr/include/c++/12/ctime /usr/include/c++/12/bits/parse_numbers.h \
  /usr/include/c++/12/bits/std_mutex.h \
- /usr/include/c++/12/backward/auto_ptr.h \
- /usr/include/c++/12/bits/ranges_uninitialized.h \
- /usr/include/c++/12/bits/ranges_algobase.h \
- /usr/include/c++/12/bits/uses_allocator_args.h \
- /usr/include/c++/12/pstl/glue_memory_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/mutex \
- /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
- /usr/include/c++/12/limits /usr/include/c++/12/ctime \
- /usr/include/c++/12/bits/parse_numbers.h \
  /usr/include/c++/12/bits/unique_lock.h /usr/include/netinet/in.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
@@ -214,10 +177,19 @@ CMakeFiles/baseStation.dir/Server.cpp.o: \
  /usr/include/linux/stddef.h \
  /usr/include/aarch64-linux-gnu/asm/posix_types.h \
  /usr/include/asm-generic/posix_types.h \
+ /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
  /usr/include/aarch64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/c++/12/stdlib.h \
- /usr/include/string.h /usr/include/strings.h \
- /home/filiphuser/Desktop/BaseStation/SharedData.h \
+ /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/unistd.h /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /home/filiphuser/Desktop/BaseStation/Subject.h \
  /home/filiphuser/Desktop/BaseStation/Config.h
