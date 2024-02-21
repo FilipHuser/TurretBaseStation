@@ -6,19 +6,15 @@
 
 class SharedData {
 public:
-    SharedData() = default;
+    explicit SharedData(std::mutex& mutex) : sharedData_mutex(mutex) {}
 
     void passData(char* buffer) {
         std::unique_lock<std::mutex> lock(this->sharedData_mutex);
-
-
         std::cout << buffer << std::endl;
     }
-
-
-
+    
 private:
-    std::mutex sharedData_mutex;
+    std::mutex& sharedData_mutex;
 };
 
 #endif //SHARED_DATA_H

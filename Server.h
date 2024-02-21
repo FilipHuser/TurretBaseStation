@@ -2,13 +2,15 @@
 #define SERVER_H
 
 #include <iostream>
+#include <vector>
+#include <memory>
+#include <mutex>
 #include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
-#include <vector>
 #include <pthread.h>
 
 #include "SharedData.h"

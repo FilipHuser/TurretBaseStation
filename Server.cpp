@@ -2,9 +2,17 @@
 
 Server::Server()
 {
-    createSocket(1025);     // CAM = camera socket
-    createSocket(1026);     // COM = communication socket
-    createSocket(1027);     // SET = settings socket
+    std::mutex cam_sd_mutex;
+    std::mutex com_sd_mutex;
+    std::mutex set_sd_mutex;
+
+    this->sharedDataContainers = std::vector<SharedData>{SharedData(cam_sd_mutex),
+                                                         SharedData(com_sd_mutex),
+                                                         SharedData(set_sd_mutex)};
+
+    createSocket(SERVER_CAM_PORT);     // CAM = camera socket
+    createSocket(SERVER_COM_PORT);     // COM = communication socket
+    createSocket(SERVER_SET_PORT);     // SET = settings socket
 }
 
 void Server::createSocket(int port)
@@ -19,7 +27,7 @@ void Server::createSocket(int port)
     }
 
     server_address.sin_family = AF_INET;
-    server_address.sin_port = port;
+    server_address.sin_port = htons(port);
     server_address.sin_addr.s_addr = INADDR_ANY;
 
     if(bind(serverSocket , (struct sockaddr*)&server_address , sizeof(server_address)) < 0)
@@ -34,7 +42,13 @@ void Server::createSocket(int port)
 
 void* Server::receiveDataStatic(void* context)
 {
-   std::pair<int , Server*>* args = static_cast<std::pair<int , Server*>*>(context); 
+   std::pair<int , Server*>* args = static_cast<std::pair<int , Server*>*>(context);
+
+    if (!args)
+    {
+        std::cerr << "Static cast was not sucessfull !" << std::endl;
+        pthread_exit(nullptr);
+    }
 
     int socketIndex = args->first;
     Server* server = args->second;
@@ -44,6 +58,9 @@ void* Server::receiveDataStatic(void* context)
 
 void* Server::receiveData(int socketIndex)
 {
+    std::cout << "Listening on sokcet: " << this->sockets[socketIndex] << std::endl;
+
+
     char buffer[1024];
     struct sockaddr_in client_address;
     socklen_t addr_len = sizeof(client_address);
@@ -58,16 +75,17 @@ void* Server::receiveData(int socketIndex)
             exit(EXIT_FAILURE);
         }
 
-        std::cout << "Received data from client: " << buffer << std::endl;
-    }
+        this->sharedDataContainers[socketIndex].passData(buffer);
 
-    pthread_exit(nullptr);
+
+        //std::cout << "Received data from client: " << buffer << std::endl;
+    }
 }
 
 Server::~Server()
 {
     for(auto& socket : this->sockets)
     {
-            close(socket);
+        close(socket);
     }
 }
