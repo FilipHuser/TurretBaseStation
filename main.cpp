@@ -1,21 +1,15 @@
 #include <iostream>
 #include <mutex>
+#include <vector>
 
 #include "Server.h"
 #include "ThreadsManager.h"
-#include "ServerObserver.h"
-#include "EventHandler.h"
 
 //#include <opencv2/opencv.hpp>
 
 int main(int argc , char* argv[])
 {
     Server server;
-    EventHandler eh;
-
-    Observer* so = new ServerObserver(&eh);
-
-    server.attach(so);
 
     ThreadsManager tm;
 
@@ -27,19 +21,10 @@ int main(int argc , char* argv[])
     tm.createThread(&server.receiveDataStatic , &CAMargs);
 
 
-    while(1);
+    while(1)
+    {
+        std::cout << server.getBufferFromQueue().data() << std::endl;
+    }
 
     return 0;
 }
-
-
-/*
-    Server ser;
-    ThreadsManager tm;
-
-    tm.createThread(&ser.receiveDataStatic , &ser);
-    
-    while(1);
-
-    return 0;
-*/

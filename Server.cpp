@@ -69,17 +69,12 @@ void* Server::receiveData(int socketIndex)
 
         this->buffer_queue.push(std::vector<char>(buffer , buffer + received_bytes));
 
-        notify();
+        //std::cout << this->buffer_queue.size() << std::endl;
+
+        //notify();
 
         memset(buffer , 0, sizeof(buffer));
     }
-}
-
-std::vector<char> Server::getBufferFromQueue()
-{
-    std::vector<char> buffer = this->buffer_queue.front();
-    this->buffer_queue.pop();
-    return buffer;
 }
 
 Server::~Server()

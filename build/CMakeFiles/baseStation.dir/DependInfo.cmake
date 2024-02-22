@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/filiphuser/Desktop/BaseStation/EventHandler.cpp" "CMakeFiles/baseStation.dir/EventHandler.cpp.o" "gcc" "CMakeFiles/baseStation.dir/EventHandler.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Server.cpp" "CMakeFiles/baseStation.dir/Server.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Server.cpp.o.d"
-  "/home/filiphuser/Desktop/BaseStation/ServerObserver.cpp" "CMakeFiles/baseStation.dir/ServerObserver.cpp.o" "gcc" "CMakeFiles/baseStation.dir/ServerObserver.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Subject.cpp" "CMakeFiles/baseStation.dir/Subject.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Subject.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/ThreadsManager.cpp" "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o" "gcc" "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/main.cpp" "CMakeFiles/baseStation.dir/main.cpp.o" "gcc" "CMakeFiles/baseStation.dir/main.cpp.o.d"

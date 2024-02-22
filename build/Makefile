@@ -174,30 +174,6 @@ baseStation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/build
 .PHONY : baseStation/fast
 
-EventHandler.o: EventHandler.cpp.o
-.PHONY : EventHandler.o
-
-# target to build an object file
-EventHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/EventHandler.cpp.o
-.PHONY : EventHandler.cpp.o
-
-EventHandler.i: EventHandler.cpp.i
-.PHONY : EventHandler.i
-
-# target to preprocess a source file
-EventHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/EventHandler.cpp.i
-.PHONY : EventHandler.cpp.i
-
-EventHandler.s: EventHandler.cpp.s
-.PHONY : EventHandler.s
-
-# target to generate assembly for a file
-EventHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/EventHandler.cpp.s
-.PHONY : EventHandler.cpp.s
-
 Server.o: Server.cpp.o
 .PHONY : Server.o
 
@@ -221,30 +197,6 @@ Server.s: Server.cpp.s
 Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Server.cpp.s
 .PHONY : Server.cpp.s
-
-ServerObserver.o: ServerObserver.cpp.o
-.PHONY : ServerObserver.o
-
-# target to build an object file
-ServerObserver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerObserver.cpp.o
-.PHONY : ServerObserver.cpp.o
-
-ServerObserver.i: ServerObserver.cpp.i
-.PHONY : ServerObserver.i
-
-# target to preprocess a source file
-ServerObserver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerObserver.cpp.i
-.PHONY : ServerObserver.cpp.i
-
-ServerObserver.s: ServerObserver.cpp.s
-.PHONY : ServerObserver.s
-
-# target to generate assembly for a file
-ServerObserver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerObserver.cpp.s
-.PHONY : ServerObserver.cpp.s
 
 Subject.o: Subject.cpp.o
 .PHONY : Subject.o
@@ -331,15 +283,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... baseStation"
-	@echo "... EventHandler.o"
-	@echo "... EventHandler.i"
-	@echo "... EventHandler.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
-	@echo "... ServerObserver.o"
-	@echo "... ServerObserver.i"
-	@echo "... ServerObserver.s"
 	@echo "... Subject.o"
 	@echo "... Subject.i"
 	@echo "... Subject.s"

@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <pthread.h>
 
+#include "ThreadSafeQueue.h"
 #include "Subject.h"
 #include "Config.h"
 
@@ -34,15 +35,14 @@ public:
     static void* receiveDataStatic(void* context);
 
 //GETTERS
-    std::vector<char> getBufferFromQueue();
+    std::vector<char> getBufferFromQueue() { return this->buffer_queue.pop(); }
 
 //DESTRUCTOR
     ~Server();
 
-private:
     std::vector<int> sockets;
 
-    std::queue<std::vector<char>> buffer_queue;
+    ThreadSafeQueue<std::vector<char>> buffer_queue;
 
     std::vector<Client> clients;
 };
