@@ -198,6 +198,30 @@ Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Server.cpp.s
 .PHONY : Server.cpp.s
 
+ServerDispatcher.o: ServerDispatcher.cpp.o
+.PHONY : ServerDispatcher.o
+
+# target to build an object file
+ServerDispatcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerDispatcher.cpp.o
+.PHONY : ServerDispatcher.cpp.o
+
+ServerDispatcher.i: ServerDispatcher.cpp.i
+.PHONY : ServerDispatcher.i
+
+# target to preprocess a source file
+ServerDispatcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerDispatcher.cpp.i
+.PHONY : ServerDispatcher.cpp.i
+
+ServerDispatcher.s: ServerDispatcher.cpp.s
+.PHONY : ServerDispatcher.s
+
+# target to generate assembly for a file
+ServerDispatcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerDispatcher.cpp.s
+.PHONY : ServerDispatcher.cpp.s
+
 Subject.o: Subject.cpp.o
 .PHONY : Subject.o
 
@@ -286,6 +310,9 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... ServerDispatcher.o"
+	@echo "... ServerDispatcher.i"
+	@echo "... ServerDispatcher.s"
 	@echo "... Subject.o"
 	@echo "... Subject.i"
 	@echo "... Subject.s"

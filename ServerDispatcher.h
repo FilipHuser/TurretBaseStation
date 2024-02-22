@@ -12,6 +12,6 @@ public:
 
 private:
     Server* server;
-}
+};
 
 #endif //SERVER_DISPATCHER_H
