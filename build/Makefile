@@ -174,6 +174,30 @@ baseStation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/build
 .PHONY : baseStation/fast
 
+Display.o: Display.cpp.o
+.PHONY : Display.o
+
+# target to build an object file
+Display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Display.cpp.o
+.PHONY : Display.cpp.o
+
+Display.i: Display.cpp.i
+.PHONY : Display.i
+
+# target to preprocess a source file
+Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Display.cpp.i
+.PHONY : Display.cpp.i
+
+Display.s: Display.cpp.s
+.PHONY : Display.s
+
+# target to generate assembly for a file
+Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Display.cpp.s
+.PHONY : Display.cpp.s
+
 Server.o: Server.cpp.o
 .PHONY : Server.o
 
@@ -307,6 +331,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... baseStation"
+	@echo "... Display.o"
+	@echo "... Display.i"
+	@echo "... Display.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"

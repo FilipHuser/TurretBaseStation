@@ -71,8 +71,6 @@ void* Server::receiveData(int socketIndex)
 
         //std::cout << this->buffer_queue.size() << std::endl;
 
-        //notify();
-
         memset(buffer , 0, sizeof(buffer));
     }
 }

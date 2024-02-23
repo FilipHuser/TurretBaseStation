@@ -1,12 +1,13 @@
 #include <iostream>
-#include <mutex>
+//#include <opencv2/opencv.hpp>
 #include <vector>
+#include <fstream>
 
 #include "Server.h"
 #include "ServerDispatcher.h"
 #include "ThreadsManager.h"
 
-//#include <opencv2/opencv.hpp>
+#include "Display.h"
 
 int main(int argc , char* argv[])
 {
@@ -25,10 +26,15 @@ int main(int argc , char* argv[])
     tm.createThread(&sd.dispatchStatic , &sd);
 
 
+    Display d(800 , 480, "Turret vision");
+
     while(1)
     {
-        //std::cout << server.getBufferFromQueue().data() << std::endl;
+        d.show();
     }
 
-    return 0;
 }
+
+/*
+
+*/
