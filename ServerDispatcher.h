@@ -4,19 +4,16 @@
 #include <vector>
 
 #include "Server.h"
+#include "Subject.h"
 
-class ServerDispatcher {
+class ServerDispatcher : public Subject{
 public:
-    ServerDispatcher(Server* server) : server(server) {}
+    ServerDispatcher() = default;
 
     static void* dispatchStatic(void* context);
     void* dispatch();
-    void addToImgBuffer(std::vector<char>);
 
 private:
-    Server* server;
-
-    std::vector<char> img_buffer;
 };
 
 #endif //SERVER_DISPATCHER_H

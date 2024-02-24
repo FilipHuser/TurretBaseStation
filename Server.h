@@ -34,15 +34,16 @@ public:
     void* receiveData(int socketIndex);
     static void* receiveDataStatic(void* context);
 
-//GETTERS
-    std::vector<char> getBufferFromQueue() { return this->buffer_queue.pop(); }
 
 //DESTRUCTOR
     ~Server();
 
+
     std::vector<int> sockets;
 
-    ThreadSafeQueue<std::vector<char>> buffer_queue;
+    std::vector<char> img_buffer;
+    std::vector<char> com_buffer;
+    std::vector<char> set_buffer;
 
     std::vector<Client> clients;
 };

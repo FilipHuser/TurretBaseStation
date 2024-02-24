@@ -18,6 +18,13 @@ void Server::createSocket(int port)
         exit(EXIT_FAILURE);
     }
 
+    // Set the size of the receive buffer (adjust as needed)
+    int bufferSize = 65536;  // 64 KB
+    if (setsockopt(serverSocket, SOL_SOCKET, SO_RCVBUF, &bufferSize, sizeof(bufferSize)) < 0) {
+        perror("setsockopt");
+        exit(EXIT_FAILURE);
+    }
+
     server_address.sin_family = AF_INET;
     server_address.sin_port = htons(port);
     server_address.sin_addr.s_addr = INADDR_ANY;
@@ -27,6 +34,7 @@ void Server::createSocket(int port)
         perror("bind");
         exit(EXIT_FAILURE);
     }
+
 
     this->sockets.push_back(serverSocket);
 }
@@ -50,7 +58,7 @@ void* Server::receiveDataStatic(void* context)
 
 void* Server::receiveData(int socketIndex)
 {
-    std::cout << "Listening on sokcet: " << this->sockets[socketIndex] << std::endl;
+    std::cout << "Listening" <<std::endl;
 
 
     char buffer[MAX_BUFFER_SIZE];
@@ -61,15 +69,22 @@ void* Server::receiveData(int socketIndex)
     {
         ssize_t received_bytes = recvfrom(this->sockets[socketIndex], buffer, sizeof(buffer), 0,
                                           (struct sockaddr*)&client_address, &addr_len);
+
         if (received_bytes < 0)
         {
             perror("recvfrom");
             exit(EXIT_FAILURE);
         }
 
-        this->buffer_queue.push(std::vector<char>(buffer , buffer + received_bytes));
+        switch(socketIndex)
+        {
+            case 0:
+                this->img_buffer.insert(this->img_buffer.end() , buffer, buffer + received_bytes);
+                if(this->img_buffer.size() >= 921600) { notify(); this->img_buffer.clear(); }
+                
+            break;
+        }
 
-        //std::cout << this->buffer_queue.size() << std::endl;
 
         memset(buffer , 0, sizeof(buffer));
     }

@@ -198,6 +198,30 @@ Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Display.cpp.s
 .PHONY : Display.cpp.s
 
+DisplayObserver.o: DisplayObserver.cpp.o
+.PHONY : DisplayObserver.o
+
+# target to build an object file
+DisplayObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.o
+.PHONY : DisplayObserver.cpp.o
+
+DisplayObserver.i: DisplayObserver.cpp.i
+.PHONY : DisplayObserver.i
+
+# target to preprocess a source file
+DisplayObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.i
+.PHONY : DisplayObserver.cpp.i
+
+DisplayObserver.s: DisplayObserver.cpp.s
+.PHONY : DisplayObserver.s
+
+# target to generate assembly for a file
+DisplayObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.s
+.PHONY : DisplayObserver.cpp.s
+
 Server.o: Server.cpp.o
 .PHONY : Server.o
 
@@ -334,6 +358,9 @@ help:
 	@echo "... Display.o"
 	@echo "... Display.i"
 	@echo "... Display.s"
+	@echo "... DisplayObserver.o"
+	@echo "... DisplayObserver.i"
+	@echo "... DisplayObserver.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"

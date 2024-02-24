@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/filiphuser/Desktop/BaseStation/Display.cpp" "CMakeFiles/baseStation.dir/Display.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Display.cpp.o.d"
+  "/home/filiphuser/Desktop/BaseStation/DisplayObserver.cpp" "CMakeFiles/baseStation.dir/DisplayObserver.cpp.o" "gcc" "CMakeFiles/baseStation.dir/DisplayObserver.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Server.cpp" "CMakeFiles/baseStation.dir/Server.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Server.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/ServerDispatcher.cpp" "CMakeFiles/baseStation.dir/ServerDispatcher.cpp.o" "gcc" "CMakeFiles/baseStation.dir/ServerDispatcher.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Subject.cpp" "CMakeFiles/baseStation.dir/Subject.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Subject.cpp.o.d"
