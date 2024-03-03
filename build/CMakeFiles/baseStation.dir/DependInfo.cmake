@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/filiphuser/Desktop/BaseStation/DisplayObserver.cpp" "CMakeFiles/baseStation.dir/DisplayObserver.cpp.o" "gcc" "CMakeFiles/baseStation.dir/DisplayObserver.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.cpp" "CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Joystick.cpp" "CMakeFiles/baseStation.dir/Joystick.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Joystick.cpp.o.d"
+  "/home/filiphuser/Desktop/BaseStation/JoystickObserver.cpp" "CMakeFiles/baseStation.dir/JoystickObserver.cpp.o" "gcc" "CMakeFiles/baseStation.dir/JoystickObserver.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Server.cpp" "CMakeFiles/baseStation.dir/Server.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Server.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/Subject.cpp" "CMakeFiles/baseStation.dir/Subject.cpp.o" "gcc" "CMakeFiles/baseStation.dir/Subject.cpp.o.d"
   "/home/filiphuser/Desktop/BaseStation/ThreadsManager.cpp" "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o" "gcc" "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o.d"

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o.d"
   "CMakeFiles/baseStation.dir/Joystick.cpp.o"
   "CMakeFiles/baseStation.dir/Joystick.cpp.o.d"
+  "CMakeFiles/baseStation.dir/JoystickObserver.cpp.o"
+  "CMakeFiles/baseStation.dir/JoystickObserver.cpp.o.d"
   "CMakeFiles/baseStation.dir/Server.cpp.o"
   "CMakeFiles/baseStation.dir/Server.cpp.o.d"
   "CMakeFiles/baseStation.dir/Subject.cpp.o"

@@ -270,6 +270,30 @@ Joystick.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Joystick.cpp.s
 .PHONY : Joystick.cpp.s
 
+JoystickObserver.o: JoystickObserver.cpp.o
+.PHONY : JoystickObserver.o
+
+# target to build an object file
+JoystickObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/JoystickObserver.cpp.o
+.PHONY : JoystickObserver.cpp.o
+
+JoystickObserver.i: JoystickObserver.cpp.i
+.PHONY : JoystickObserver.i
+
+# target to preprocess a source file
+JoystickObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/JoystickObserver.cpp.i
+.PHONY : JoystickObserver.cpp.i
+
+JoystickObserver.s: JoystickObserver.cpp.s
+.PHONY : JoystickObserver.s
+
+# target to generate assembly for a file
+JoystickObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/JoystickObserver.cpp.s
+.PHONY : JoystickObserver.cpp.s
+
 Server.o: Server.cpp.o
 .PHONY : Server.o
 
@@ -391,6 +415,9 @@ help:
 	@echo "... Joystick.o"
 	@echo "... Joystick.i"
 	@echo "... Joystick.s"
+	@echo "... JoystickObserver.o"
+	@echo "... JoystickObserver.i"
+	@echo "... JoystickObserver.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
