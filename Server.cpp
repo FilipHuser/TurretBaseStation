@@ -18,7 +18,7 @@ void Server::createSocket(int port)
         exit(EXIT_FAILURE);
     }
 
-    // Set the size of the receive buffer (adjust as needed)
+    // Set the size of the receive buffer
     int bufferSize = 65536;  // 64 KB
     if (setsockopt(serverSocket, SOL_SOCKET, SO_RCVBUF, &bufferSize, sizeof(bufferSize)) < 0) {
         perror("setsockopt");
@@ -58,7 +58,7 @@ void* Server::receiveDataStatic(void* context)
 
 void* Server::receiveData(int socketIndex)
 {
-    std::cout << "Listening" <<std::endl;
+    std::cout << "Listening" << socketIndex <<std::endl;
 
 
     char buffer[MAX_BUFFER_SIZE];
@@ -79,12 +79,16 @@ void* Server::receiveData(int socketIndex)
         switch(socketIndex)
         {
             case 0:
-                this->img_buffer.insert(this->img_buffer.end() , buffer, buffer + received_bytes);
-                if(this->img_buffer.size() >= 921600) { notify(); this->img_buffer.clear(); }
+                this->cam_buffer.insert(this->cam_buffer.end() , buffer, buffer + received_bytes);
+                if(this->cam_buffer.size() >= 921600) { notify(); this->cam_buffer.clear(); }
                 
             break;
-        }
 
+            case 1:
+                std::cout << buffer << std::endl;
+            break;
+
+        }
 
         memset(buffer , 0, sizeof(buffer));
     }

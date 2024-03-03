@@ -41,7 +41,7 @@ public:
 
     std::vector<int> sockets;
 
-    std::vector<char> img_buffer;
+    std::vector<char> cam_buffer;
     std::vector<char> com_buffer;
     std::vector<char> set_buffer;
 
