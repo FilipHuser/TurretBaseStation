@@ -5,6 +5,14 @@ Server::Server()
     createSocket(SERVER_CAM_PORT);     // CAM = camera socket
     createSocket(SERVER_COM_PORT);     // COM = communication socket
     createSocket(SERVER_SET_PORT);     // SET = settings socket
+
+    struct sockaddr_in clientAddress;
+    memset(&clientAddress, 0, sizeof(clientAddress));
+    clientAddress.sin_family = AF_INET;
+    clientAddress.sin_addr.s_addr = inet_addr(TURRET_1_IP);
+    clientAddress.sin_port = htons(TURRET_PORT);
+
+    this->client_addresses.push_back(clientAddress);
 }
 
 void Server::createSocket(int port)
@@ -93,6 +101,32 @@ void* Server::receiveData(int socketIndex)
         memset(buffer , 0, sizeof(buffer));
     }
 }
+
+size_t Server::sendData(const char* data , int addressIndex) 
+{
+    size_t bytesSent{0};
+
+    if ((bytesSent = sendto(this->sockets[1], data, strlen(data), 0, (struct sockaddr*)&this->client_addresses[addressIndex], sizeof(this->client_addresses[addressIndex]))) < 0) 
+    {
+        perror("sendto");
+        exit(EXIT_FAILURE);
+    }
+    return bytesSent;
+}
+
+size_t Server::sendData(std::vector<char> data , int addressIndex) 
+{
+    size_t bytesSent{0};
+
+    if ((bytesSent = sendto(this->sockets[1], data.data(), data.size(), 0, (struct sockaddr*)&this->client_addresses[addressIndex], sizeof(this->client_addresses[addressIndex]))) < 0) 
+    {
+        perror("sendto");
+        exit(EXIT_FAILURE);
+    }
+
+    return bytesSent;
+}
+
 
 Server::~Server()
 {

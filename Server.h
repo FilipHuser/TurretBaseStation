@@ -6,6 +6,7 @@
 #include <queue>
 #include <mutex>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <cstring>
@@ -20,7 +21,6 @@
 
 struct Client{
     struct client_address;
-    int clientSocket;
 };
 
 class Server : public Subject {
@@ -31,6 +31,9 @@ public:
     void createSocket(int port);
 
 //COMUNICATION
+    size_t sendData(const char* data , int socketIndex);
+    size_t sendData(std::vector<char> data , int socketIndex);
+
     void* receiveData(int socketIndex);
     static void* receiveDataStatic(void* context);
 
@@ -45,7 +48,7 @@ public:
     std::vector<char> com_buffer;
     std::vector<char> set_buffer;
 
-    std::vector<Client> clients;
+    std::vector<struct sockaddr_in> client_addresses;
 };
 
 #endif //SERVER_H

@@ -1,0 +1,7 @@
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/baseStation.dir
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/edit_cache.dir
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/rebuild_cache.dir
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/list_install_components.dir
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/install.dir
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/install/local.dir
+/home/filiphuser/Desktop/BaseStation/build/CMakeFiles/install/strip.dir

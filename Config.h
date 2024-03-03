@@ -10,6 +10,25 @@
 #define MAX_BUFFER_SIZE 65000
 #define MAX_CLIENTS_QUEUE 5
 
+#define TURRET_1_IP "192.168.0.18"
+#define TURRET_PORT 1028
+
+//---------------------------------------------------
+
+//--------------------- ADCPI -----------------------
+
+#define I2C_ADDRESS_1 0x68
+#define I2C_ADDRESS_2 0x69
+#define ADCPI_BITRATE 12
+#define ADCPI_PGA 1 //Programmable Gain Amplifier => resolution
+
+//---------------------------------------------------
+
+//-------------------- JOYSTICK ---------------------
+
+#define JOYSTICK_VRX_PIN 1
+#define JOYSTICK_VRY_PIN 2
+
 //---------------------------------------------------
 
 
