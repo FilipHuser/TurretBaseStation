@@ -10,7 +10,7 @@
 #define MAX_BUFFER_SIZE 65000
 #define MAX_CLIENTS_QUEUE 5
 
-#define TURRET_1_IP "192.168.0.18"
+#define TURRET_1_IP "192.168.2.2"
 #define TURRET_PORT 1028
 
 //---------------------------------------------------

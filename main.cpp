@@ -22,7 +22,7 @@ int main(int argc , char* argv[])
     Observer* jO = new JoystickObserver(&s);
 
     j.attach(jO);
-    //server.attach(dO);
+    s.attach(dO);
 
     ThreadsManager tm;
 

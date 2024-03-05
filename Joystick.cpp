@@ -22,7 +22,7 @@ void* Joystick::getInput()
         {
             notify();
         }
-
+        usleep(5000);
     }
 
     pthread_exit(nullptr);
