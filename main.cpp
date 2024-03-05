@@ -13,12 +13,15 @@
 
 int main(int argc , char* argv[])
 {
-    Server server;
+    Server s;
 
     Display d(640 , 480 , "Turret vision");
+    Joystick j;
 
     Observer* dO = new DisplayObserver(&d);
+    Observer* jO = new JoystickObserver(&s);
 
+    j.attach(jO);
     //server.attach(dO);
 
     ThreadsManager tm;
@@ -27,23 +30,22 @@ int main(int argc , char* argv[])
     std::pair<int , Server*> CAMargs;
 
     CAMargs.first = 0;
-    CAMargs.second = &server;
+    CAMargs.second = &s;
 
     std::pair<int , Server*> COMargs;
 
     COMargs.first = 1;
-    COMargs.second = &server;
+    COMargs.second = &s;
 
 
 
-    tm.createThread(&server.receiveDataStatic , &CAMargs);
-    tm.createThread(&server.receiveDataStatic , &COMargs);
+    tm.createThread(&s.receiveDataStatic , &CAMargs);
+    tm.createThread(&s.receiveDataStatic , &COMargs);
+    tm.createThread(&j.getInputStatic , &j);
 
     while(1)
     {
-        server.sendData("Ahooj z basky" , 0);
     }
-
 }
 
 /*

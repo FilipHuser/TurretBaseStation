@@ -6,14 +6,21 @@
 #include "Subject.h"
 #include "Include/ABE_ADCPi.h"
 #include "Config.h"
+#include "unistd.h"
 
-class Joystic : public Subject {
+class Joystick : public Subject {
 public:
-    Joystic();
+    Joystick();
 
-    void get_input();
+    static void* getInputStatic(void* context);
+    void* getInput();
 
-//private:
+    double getX() { return this->x; }
+    double getY() { return this->y; }
+
+    void dismiss() { this->loop = 0; }
+
+private:
     ABElectronics_CPP_Libraries::ADCPi adc;
     double x;
     double y;

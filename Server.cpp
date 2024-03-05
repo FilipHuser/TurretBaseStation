@@ -102,11 +102,11 @@ void* Server::receiveData(int socketIndex)
     }
 }
 
-size_t Server::sendData(const char* data , int addressIndex) 
+size_t Server::sendData(const char* data , int clientIndex) 
 {
     size_t bytesSent{0};
 
-    if ((bytesSent = sendto(this->sockets[1], data, strlen(data), 0, (struct sockaddr*)&this->client_addresses[addressIndex], sizeof(this->client_addresses[addressIndex]))) < 0) 
+    if ((bytesSent = sendto(this->sockets[1], data, strlen(data), 0, (struct sockaddr*)&this->client_addresses[clientIndex], sizeof(this->client_addresses[clientIndex]))) < 0) 
     {
         perror("sendto");
         exit(EXIT_FAILURE);
@@ -114,11 +114,11 @@ size_t Server::sendData(const char* data , int addressIndex)
     return bytesSent;
 }
 
-size_t Server::sendData(std::vector<char> data , int addressIndex) 
+size_t Server::sendData(std::vector<char> data , int clientIndex) 
 {
     size_t bytesSent{0};
 
-    if ((bytesSent = sendto(this->sockets[1], data.data(), data.size(), 0, (struct sockaddr*)&this->client_addresses[addressIndex], sizeof(this->client_addresses[addressIndex]))) < 0) 
+    if ((bytesSent = sendto(this->sockets[1], data.data(), data.size(), 0, (struct sockaddr*)&this->client_addresses[clientIndex], sizeof(this->client_addresses[clientIndex]))) < 0) 
     {
         perror("sendto");
         exit(EXIT_FAILURE);

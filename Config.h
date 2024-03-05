@@ -29,6 +29,9 @@
 #define JOYSTICK_VRX_PIN 1
 #define JOYSTICK_VRY_PIN 2
 
+#define LOWER_THRESHOLD 2
+#define HIGHER_THRESHOLD 3
+
 //---------------------------------------------------
 
 

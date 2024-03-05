@@ -31,8 +31,8 @@ public:
     void createSocket(int port);
 
 //COMUNICATION
-    size_t sendData(const char* data , int socketIndex);
-    size_t sendData(std::vector<char> data , int socketIndex);
+    size_t sendData(const char* data , int clientIndex);
+    size_t sendData(std::vector<char> data , int clientIndex);
 
     void* receiveData(int socketIndex);
     static void* receiveDataStatic(void* context);

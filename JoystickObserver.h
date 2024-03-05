@@ -1,6 +1,9 @@
 #ifndef JOYSTICK_OBSERVER_H
 #define JOYSTICK_OBSERVER_H
 
+#include <string>
+
+#include "Joystick.h"
 #include "Observer.h"
 #include "Server.h"
 
