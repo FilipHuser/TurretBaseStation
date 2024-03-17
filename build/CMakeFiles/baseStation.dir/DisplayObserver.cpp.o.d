@@ -373,6 +373,7 @@ CMakeFiles/baseStation.dir/DisplayObserver.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/filiphuser/Desktop/BaseStation/Config.h \
  /home/filiphuser/Desktop/BaseStation/Server.h /usr/include/netinet/in.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
@@ -397,5 +398,4 @@ CMakeFiles/baseStation.dir/DisplayObserver.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/time.h /usr/include/semaphore.h \
  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
  /home/filiphuser/Desktop/BaseStation/Subject.h \
- /home/filiphuser/Desktop/BaseStation/Config.h \
  /home/filiphuser/Desktop/BaseStation/Observer.h

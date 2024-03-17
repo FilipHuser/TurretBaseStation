@@ -5,8 +5,11 @@
 #include <string>
 #include <vector>
 
+#include "Config.h"
+
 class Display{
 public:
+    Display();
     Display(int width , int height , std::string windowName);
 
     void show();

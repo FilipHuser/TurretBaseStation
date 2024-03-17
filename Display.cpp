@@ -1,5 +1,10 @@
 #include "Display.h"
 
+Display::Display() : width(DISPLAY_WINDOW_W) , height(DISPLAY_WINDOW_H) , windowName(DISPLAY_WINDOW_NAME)
+{
+    this->img_frame = cv::Mat(this->height, this->width, CV_8UC3, cv::Scalar(0, 0, 0));
+}
+
 Display::Display(int width , int height , std::string windowName) : width(width) , height(height) , windowName(windowName)
 {
     this->img_frame = cv::Mat(this->height, this->width, CV_8UC3, cv::Scalar(0, 0, 0));

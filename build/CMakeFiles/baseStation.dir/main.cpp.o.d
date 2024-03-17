@@ -404,4 +404,7 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /home/filiphuser/Desktop/BaseStation/Observer.h \
  /home/filiphuser/Desktop/BaseStation/JoystickObserver.h \
  /home/filiphuser/Desktop/BaseStation/Joystick.h \
- /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.h
+ /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.h \
+ /home/filiphuser/Desktop/BaseStation/BaseStationBuilder.h \
+ /home/filiphuser/Desktop/BaseStation/Builder.h \
+ /home/filiphuser/Desktop/BaseStation/BaseStation.h

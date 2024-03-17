@@ -174,6 +174,54 @@ baseStation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/build
 .PHONY : baseStation/fast
 
+BaseStation.o: BaseStation.cpp.o
+.PHONY : BaseStation.o
+
+# target to build an object file
+BaseStation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStation.cpp.o
+.PHONY : BaseStation.cpp.o
+
+BaseStation.i: BaseStation.cpp.i
+.PHONY : BaseStation.i
+
+# target to preprocess a source file
+BaseStation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStation.cpp.i
+.PHONY : BaseStation.cpp.i
+
+BaseStation.s: BaseStation.cpp.s
+.PHONY : BaseStation.s
+
+# target to generate assembly for a file
+BaseStation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStation.cpp.s
+.PHONY : BaseStation.cpp.s
+
+BaseStationBuilder.o: BaseStationBuilder.cpp.o
+.PHONY : BaseStationBuilder.o
+
+# target to build an object file
+BaseStationBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o
+.PHONY : BaseStationBuilder.cpp.o
+
+BaseStationBuilder.i: BaseStationBuilder.cpp.i
+.PHONY : BaseStationBuilder.i
+
+# target to preprocess a source file
+BaseStationBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.i
+.PHONY : BaseStationBuilder.cpp.i
+
+BaseStationBuilder.s: BaseStationBuilder.cpp.s
+.PHONY : BaseStationBuilder.s
+
+# target to generate assembly for a file
+BaseStationBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.s
+.PHONY : BaseStationBuilder.cpp.s
+
 Display.o: Display.cpp.o
 .PHONY : Display.o
 
@@ -403,6 +451,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... baseStation"
+	@echo "... BaseStation.o"
+	@echo "... BaseStation.i"
+	@echo "... BaseStation.s"
+	@echo "... BaseStationBuilder.o"
+	@echo "... BaseStationBuilder.i"
+	@echo "... BaseStationBuilder.s"
 	@echo "... Display.o"
 	@echo "... Display.i"
 	@echo "... Display.s"

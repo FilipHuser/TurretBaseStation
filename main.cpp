@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <cstdlib>
 
 #include "Server.h"
 #include "ThreadsManager.h"
@@ -9,10 +10,19 @@
 #include "JoystickObserver.h"
 
 
+#include "BaseStationBuilder.h"
+
+
 #include "Display.h"
 
 int main(int argc , char* argv[])
 {
+	uid_t uid = getuid();
+	char xdg_runtime_dir[128];
+	snprintf(xdg_runtime_dir , sizeof(xdg_runtime_dir) ,"/run/user/%d" , uid); 
+
+	setenv("XDG_RUNTIME_DIR" , xdg_runtime_dir , 1);
+
     Server s;
 
     Display d(640 , 480 , "Turret vision");
@@ -37,8 +47,6 @@ int main(int argc , char* argv[])
     COMargs.first = 1;
     COMargs.second = &s;
 
-
-
     tm.createThread(&s.receiveDataStatic , &CAMargs);
     tm.createThread(&s.receiveDataStatic , &COMargs);
     tm.createThread(&j.getInputStatic , &j);
@@ -47,43 +55,3 @@ int main(int argc , char* argv[])
     {
     }
 }
-
-/*
-
-#include <iostream>
-#include <fcntl.h>
-#include <sys/ioctl.h>
-#include <linux/i2c.h>
-#include <linux/i2c-dev.h>
-#include <unistd.h>
-
-#include "Joystick.h"
-
-int main(int argc , char* argv[])
-{
-    Joystic j;
-
-    ABElectronics_CPP_Libraries::ADCPi adc(0x68, 0x69, 12);
-	adc.set_pga(1);
-	adc.set_conversion_mode(0);
-
-    while (1){
-
-		double x = adc.read_voltage(1);
-		double y =adc.read_voltage(2);
-
-		if (x > 3) { std::cout << "left" << std::endl; }
-
-		if (x < 2) { std::cout << "right" << std::endl; }
-
-		if (y > 3) { std::cout << "down" << std::endl; }
-
-		if (y < 2) { std::cout << "up" << std::endl; }
-
-		usleep(200000); // sleep 0.2 seconds
-	}
-
-}
-
-
-*/
