@@ -49,7 +49,7 @@ int main(int argc , char* argv[])
 
     tm.createThread(&s.receiveDataStatic , &CAMargs);
     tm.createThread(&s.receiveDataStatic , &COMargs);
-    tm.createThread(&j.getInputStatic , &j);
+    tm.createThread(&j.monitorJoystickStatic , &j);
 
     while(1)
     {

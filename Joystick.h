@@ -2,9 +2,10 @@
 #define JOYSTICK_H
 
 #include <iostream>
+#include <fcntl.h>
+#include <linux/joystick.h>
 
 #include "Subject.h"
-#include "Include/ABE_ADCPi.h"
 #include "Config.h"
 #include "unistd.h"
 
@@ -12,18 +13,16 @@ class Joystick : public Subject {
 public:
     Joystick();
 
-    static void* getInputStatic(void* context);
-    void* getInput();
+    static void* monitorJoystickStatic(void* context);
+    void* monitorJoystick();
 
-    double getX() { return this->x; }
-    double getY() { return this->y; }
+    struct js_event get_joystick() { return this->joystick; }
 
     void dismiss() { this->loop = 0; }
 
 private:
-    ABElectronics_CPP_Libraries::ADCPi adc;
-    double x;
-    double y;
+    int fd;
+    struct js_event joystick;
     bool loop;
 };
 

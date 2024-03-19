@@ -239,8 +239,23 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: \
  /home/filiphuser/Desktop/BaseStation/Subject.h \
  /home/filiphuser/Desktop/BaseStation/Config.h \
  /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
- /home/filiphuser/Desktop/BaseStation/Joystick.h \
- /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.h \
+ /home/filiphuser/Desktop/BaseStation/Joystick.h /usr/include/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+ /usr/include/linux/joystick.h /usr/include/linux/types.h \
+ /usr/include/aarch64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/linux/input.h /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+ /usr/include/aarch64-linux-gnu/bits/ioctls.h \
+ /usr/include/aarch64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/aarch64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
+ /usr/include/linux/input-event-codes.h \
  /home/filiphuser/Desktop/BaseStation/Display.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
@@ -402,4 +417,7 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: \
  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
- /usr/include/opencv4/opencv2/video/background_segm.hpp
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/filiphuser/Desktop/BaseStation/DisplayObserver.h \
+ /home/filiphuser/Desktop/BaseStation/Observer.h \
+ /home/filiphuser/Desktop/BaseStation/JoystickObserver.h

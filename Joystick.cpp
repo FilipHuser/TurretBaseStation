@@ -1,29 +1,39 @@
 #include "Joystick.h"
 
-Joystick::Joystick() : adc(I2C_ADDRESS_1, I2C_ADDRESS_2, ADCPI_BITRATE) , x(-1) , y(-1) , loop(1)
+Joystick::Joystick() : fd(-1) , loop(1)
 {
-	adc.set_pga(ADCPI_PGA);
-	adc.set_conversion_mode(0);
+    // Open the joystick device
+    this->fd = open("/dev/input/js0", O_RDONLY);
+    if (fd == -1) {
+        perror("open");
+        exit(1);
+    }
+
+
 }
 
-void* Joystick::getInputStatic(void* context)
+void* Joystick::monitorJoystickStatic(void* context)
 {
-    return ((Joystick*)(context))->getInput();
+    return ((Joystick*)(context))->monitorJoystick();
 }
 
-void* Joystick::getInput()
+void* Joystick::monitorJoystick()
 {
-    while(this->loop)
+    while (1) 
     {
-        this->x = this->adc.read_voltage(JOYSTICK_VRX_PIN);
-        this->y = this->adc.read_voltage(JOYSTICK_VRY_PIN);
+        if (read(this->fd, &this->joystick, sizeof(this->joystick)) != sizeof(this->joystick)) {
+            perror("read");
+            exit(1);
+        }
 
-        if (x > HIGHER_THRESHOLD || x < LOWER_THRESHOLD || y > HIGHER_THRESHOLD || y < LOWER_THRESHOLD)
+        int event_type = this->joystick.type  & ~JS_EVENT_INIT;
+
+        if(event_type== JS_EVENT_AXIS || event_type == JS_EVENT_BUTTON) 
         {
             notify();
         }
-        usleep(5000);
     }
+        usleep(5000);
 
     pthread_exit(nullptr);
 }

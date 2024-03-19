@@ -1,7 +1,10 @@
 #ifndef JOYSTICK_OBSERVER_H
 #define JOYSTICK_OBSERVER_H
 
+#include <iostream>
+#include <linux/joystick.h>
 #include <string>
+#include <cmath>
 
 #include "Joystick.h"
 #include "Observer.h"
