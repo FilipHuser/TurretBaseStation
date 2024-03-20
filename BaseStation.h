@@ -10,8 +10,11 @@
 
 class BaseStation {
 public:
+//CONSTRUCTOR
     BaseStation() = default;
 
+//METHODS
+    void run();
 
 //SETTERS
     void setServer(std::unique_ptr<Server> server) { this->server = std::move(server); }
@@ -20,7 +23,12 @@ public:
     void setThreadsManager(std::unique_ptr<ThreadsManager> manager) { this->tManager = std::move(manager); }
 
 //GETTERS
-    
+    Server* getServer() { return this->server.get(); }
+    Display* getDisplay() { return this->display.get(); }
+    Joystick* getJoystick() { return this->joystick.get(); }
+
+//DESTRUCTOR
+    ~BaseStation();
 
 private:
     std::unique_ptr<Server> server;

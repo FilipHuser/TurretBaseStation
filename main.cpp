@@ -3,15 +3,8 @@
 #include <fstream>
 #include <cstdlib>
 
-#include "Server.h"
-#include "ThreadsManager.h"
-
-#include "DisplayObserver.h"
-#include "JoystickObserver.h"
-
-
 #include "BaseStationBuilder.h"
-
+#include "Director.h"
 
 #include "Display.h"
 
@@ -23,16 +16,31 @@ int main(int argc , char* argv[])
 
 	setenv("XDG_RUNTIME_DIR" , xdg_runtime_dir , 1);
 
-    Server s;
+    Director d;
+    std::unique_ptr<BaseStationBuilder> bsb = std::make_unique<BaseStationBuilder>();
+
+    d.setBuilder(bsb.get());
+
+    d.buildMinimalBaseStation();
+
+    bsb->getProduct()->run();
+
+
+    return 0;
+}
+
+/*
+
+Server s;
 
     Display d(640 , 480 , "Turret vision");
     Joystick j;
 
-    Observer* dO = new DisplayObserver(&d);
+    Observer* dO = new ServerObserver(&d);
     Observer* jO = new JoystickObserver(&s);
 
-    j.attach(jO);
-    s.attach(dO);
+    //j.attach(jO);
+    //s.attach(dO);
 
     ThreadsManager tm;
 
@@ -51,7 +59,5 @@ int main(int argc , char* argv[])
     tm.createThread(&s.receiveDataStatic , &COMargs);
     tm.createThread(&j.monitorJoystickStatic , &j);
 
-    while(1)
-    {
-    }
-}
+
+*/

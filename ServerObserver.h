@@ -5,9 +5,9 @@
 #include "Server.h"
 #include "Observer.h"
 
-class DisplayObserver : public Observer {
+class ServerObserver : public Observer {
 public:
-    DisplayObserver(Display* display) : display(display) {}
+    ServerObserver(Display* display) : display(display) {}
 
     void update(Subject* subject) override;
 

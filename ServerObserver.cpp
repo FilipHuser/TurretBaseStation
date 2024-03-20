@@ -1,6 +1,6 @@
-#include "DisplayObserver.h"
+#include "ServerObserver.h"
 
-void DisplayObserver::update(Subject* subject)
+void ServerObserver::update(Subject* subject)
 {
     if (Server* server = dynamic_cast<Server*>(subject))
     {

@@ -418,6 +418,6 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/filiphuser/Desktop/BaseStation/DisplayObserver.h \
+ /home/filiphuser/Desktop/BaseStation/ServerObserver.h \
  /home/filiphuser/Desktop/BaseStation/Observer.h \
  /home/filiphuser/Desktop/BaseStation/JoystickObserver.h

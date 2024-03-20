@@ -37,11 +37,10 @@ public:
     void* receiveData(int socketIndex);
     static void* receiveDataStatic(void* context);
 
-
 //DESTRUCTOR
     ~Server();
 
-
+    
     std::vector<int> sockets;
 
     std::vector<char> cam_buffer;

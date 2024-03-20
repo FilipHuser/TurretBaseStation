@@ -223,4 +223,13 @@ CMakeFiles/baseStation.dir/Server.cpp.o: \
  /usr/include/aarch64-linux-gnu/sys/time.h /usr/include/semaphore.h \
  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
  /home/filiphuser/Desktop/BaseStation/Subject.h \
+ /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_tempbuf.h \
+ /usr/include/c++/12/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/12/bits/shared_ptr_atomic.h \
+ /usr/include/c++/12/backward/auto_ptr.h \
+ /usr/include/c++/12/bits/ranges_uninitialized.h \
+ /usr/include/c++/12/bits/ranges_algobase.h \
+ /usr/include/c++/12/bits/uses_allocator_args.h \
+ /usr/include/c++/12/pstl/glue_memory_defs.h \
+ /usr/include/c++/12/pstl/execution_defs.h \
  /home/filiphuser/Desktop/BaseStation/Config.h

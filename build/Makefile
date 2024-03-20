@@ -222,6 +222,30 @@ BaseStationBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.s
 .PHONY : BaseStationBuilder.cpp.s
 
+Director.o: Director.cpp.o
+.PHONY : Director.o
+
+# target to build an object file
+Director.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Director.cpp.o
+.PHONY : Director.cpp.o
+
+Director.i: Director.cpp.i
+.PHONY : Director.i
+
+# target to preprocess a source file
+Director.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Director.cpp.i
+.PHONY : Director.cpp.i
+
+Director.s: Director.cpp.s
+.PHONY : Director.s
+
+# target to generate assembly for a file
+Director.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Director.cpp.s
+.PHONY : Director.cpp.s
+
 Display.o: Display.cpp.o
 .PHONY : Display.o
 
@@ -245,30 +269,6 @@ Display.s: Display.cpp.s
 Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Display.cpp.s
 .PHONY : Display.cpp.s
-
-DisplayObserver.o: DisplayObserver.cpp.o
-.PHONY : DisplayObserver.o
-
-# target to build an object file
-DisplayObserver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.o
-.PHONY : DisplayObserver.cpp.o
-
-DisplayObserver.i: DisplayObserver.cpp.i
-.PHONY : DisplayObserver.i
-
-# target to preprocess a source file
-DisplayObserver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.i
-.PHONY : DisplayObserver.cpp.i
-
-DisplayObserver.s: DisplayObserver.cpp.s
-.PHONY : DisplayObserver.s
-
-# target to generate assembly for a file
-DisplayObserver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.s
-.PHONY : DisplayObserver.cpp.s
 
 Include/ABE_ADCPi.o: Include/ABE_ADCPi.cpp.o
 .PHONY : Include/ABE_ADCPi.o
@@ -366,6 +366,30 @@ Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Server.cpp.s
 .PHONY : Server.cpp.s
 
+ServerObserver.o: ServerObserver.cpp.o
+.PHONY : ServerObserver.o
+
+# target to build an object file
+ServerObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerObserver.cpp.o
+.PHONY : ServerObserver.cpp.o
+
+ServerObserver.i: ServerObserver.cpp.i
+.PHONY : ServerObserver.i
+
+# target to preprocess a source file
+ServerObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerObserver.cpp.i
+.PHONY : ServerObserver.cpp.i
+
+ServerObserver.s: ServerObserver.cpp.s
+.PHONY : ServerObserver.s
+
+# target to generate assembly for a file
+ServerObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ServerObserver.cpp.s
+.PHONY : ServerObserver.cpp.s
+
 Subject.o: Subject.cpp.o
 .PHONY : Subject.o
 
@@ -457,12 +481,12 @@ help:
 	@echo "... BaseStationBuilder.o"
 	@echo "... BaseStationBuilder.i"
 	@echo "... BaseStationBuilder.s"
+	@echo "... Director.o"
+	@echo "... Director.i"
+	@echo "... Director.s"
 	@echo "... Display.o"
 	@echo "... Display.i"
 	@echo "... Display.s"
-	@echo "... DisplayObserver.o"
-	@echo "... DisplayObserver.i"
-	@echo "... DisplayObserver.s"
 	@echo "... Include/ABE_ADCPi.o"
 	@echo "... Include/ABE_ADCPi.i"
 	@echo "... Include/ABE_ADCPi.s"
@@ -475,6 +499,9 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
+	@echo "... ServerObserver.o"
+	@echo "... ServerObserver.i"
+	@echo "... ServerObserver.s"
 	@echo "... Subject.o"
 	@echo "... Subject.i"
 	@echo "... Subject.s"

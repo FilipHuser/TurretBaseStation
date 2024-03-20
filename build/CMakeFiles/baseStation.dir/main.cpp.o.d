@@ -161,15 +161,58 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++io.h \
  /usr/include/c++/12/bits/fstream.tcc \
+ /home/filiphuser/Desktop/BaseStation/BaseStationBuilder.h \
+ /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_tempbuf.h \
+ /usr/include/c++/12/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
+ /usr/include/c++/12/bits/uses_allocator.h \
+ /usr/include/c++/12/bits/unique_ptr.h /usr/include/c++/12/tuple \
+ /usr/include/c++/12/bits/shared_ptr.h \
+ /usr/include/c++/12/bits/shared_ptr_base.h \
+ /usr/include/c++/12/bits/allocated_ptr.h \
+ /usr/include/c++/12/ext/aligned_buffer.h \
+ /usr/include/c++/12/ext/concurrence.h \
+ /usr/include/c++/12/bits/shared_ptr_atomic.h \
+ /usr/include/c++/12/bits/atomic_base.h \
+ /usr/include/c++/12/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/12/bits/atomic_wait.h /usr/include/c++/12/climits \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
+ /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
+ /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/aarch64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/aarch64-linux-gnu/sys/syscall.h \
+ /usr/include/aarch64-linux-gnu/asm/unistd.h \
+ /usr/include/asm-generic/unistd.h \
+ /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/aarch64-linux-gnu/bits/syscall.h \
+ /usr/include/c++/12/bits/std_mutex.h \
+ /usr/include/c++/12/backward/auto_ptr.h \
+ /usr/include/c++/12/bits/ranges_uninitialized.h \
+ /usr/include/c++/12/bits/ranges_algobase.h \
+ /usr/include/c++/12/bits/uses_allocator_args.h \
+ /usr/include/c++/12/pstl/glue_memory_defs.h \
+ /usr/include/c++/12/pstl/execution_defs.h \
+ /home/filiphuser/Desktop/BaseStation/Builder.h \
+ /home/filiphuser/Desktop/BaseStation/BaseStation.h \
  /home/filiphuser/Desktop/BaseStation/Server.h /usr/include/c++/12/queue \
  /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
  /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h /usr/include/c++/12/mutex \
- /usr/include/c++/12/tuple /usr/include/c++/12/bits/chrono.h \
- /usr/include/c++/12/ratio /usr/include/c++/12/limits \
- /usr/include/c++/12/ctime /usr/include/c++/12/bits/parse_numbers.h \
- /usr/include/c++/12/bits/std_mutex.h \
+ /usr/include/c++/12/bits/stl_queue.h /usr/include/c++/12/mutex \
+ /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
+ /usr/include/c++/12/limits /usr/include/c++/12/ctime \
+ /usr/include/c++/12/bits/parse_numbers.h \
  /usr/include/c++/12/bits/unique_lock.h /usr/include/netinet/in.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
@@ -181,47 +224,16 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/linux/stddef.h \
  /usr/include/aarch64-linux-gnu/asm/posix_types.h \
  /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
  /usr/include/aarch64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
  /usr/include/c++/12/stdlib.h /usr/include/c++/12/cstring \
- /usr/include/string.h /usr/include/strings.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/include/string.h /usr/include/strings.h \
  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
- /usr/include/c++/12/condition_variable \
- /usr/include/c++/12/bits/shared_ptr.h \
- /usr/include/c++/12/bits/shared_ptr_base.h \
- /usr/include/c++/12/bits/allocated_ptr.h \
- /usr/include/c++/12/bits/unique_ptr.h \
- /usr/include/c++/12/ext/aligned_buffer.h \
- /usr/include/c++/12/ext/concurrence.h /usr/include/c++/12/bit \
- /usr/include/c++/12/bits/align.h /usr/include/c++/12/stop_token \
- /usr/include/c++/12/atomic /usr/include/c++/12/bits/atomic_base.h \
- /usr/include/c++/12/bits/atomic_lockfree_defines.h \
- /usr/include/c++/12/bits/atomic_wait.h /usr/include/c++/12/climits \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/limits.h \
- /usr/lib/gcc/aarch64-linux-gnu/12/include/syslimits.h \
- /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
- /usr/include/aarch64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
- /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
- /usr/include/aarch64-linux-gnu/bits/uio_lim.h /usr/include/syscall.h \
- /usr/include/aarch64-linux-gnu/sys/syscall.h \
- /usr/include/aarch64-linux-gnu/asm/unistd.h \
- /usr/include/asm-generic/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/syscall.h \
- /usr/include/c++/12/bits/std_thread.h /usr/include/c++/12/semaphore \
- /usr/include/c++/12/bits/semaphore_base.h \
+ /usr/include/c++/12/condition_variable /usr/include/c++/12/stop_token \
+ /usr/include/c++/12/atomic /usr/include/c++/12/bits/std_thread.h \
+ /usr/include/c++/12/semaphore /usr/include/c++/12/bits/semaphore_base.h \
  /usr/include/c++/12/bits/atomic_timed_wait.h \
  /usr/include/c++/12/bits/this_thread_sleep.h \
  /usr/include/aarch64-linux-gnu/sys/time.h /usr/include/semaphore.h \
@@ -229,7 +241,23 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /home/filiphuser/Desktop/BaseStation/Subject.h \
  /home/filiphuser/Desktop/BaseStation/Config.h \
  /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
- /home/filiphuser/Desktop/BaseStation/DisplayObserver.h \
+ /home/filiphuser/Desktop/BaseStation/Joystick.h /usr/include/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+ /usr/include/linux/joystick.h /usr/include/linux/types.h \
+ /usr/include/aarch64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/linux/input.h /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+ /usr/include/aarch64-linux-gnu/bits/ioctls.h \
+ /usr/include/aarch64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/aarch64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
+ /usr/include/linux/input-event-codes.h \
  /home/filiphuser/Desktop/BaseStation/Display.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
@@ -245,13 +273,10 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/c++/12/array /usr/include/opencv4/opencv2/core/base.hpp \
  /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
- /usr/include/c++/12/bits/stl_tempbuf.h \
  /usr/include/c++/12/bits/uniform_int_dist.h \
  /usr/include/c++/12/bits/ranges_algo.h \
- /usr/include/c++/12/bits/ranges_algobase.h \
  /usr/include/c++/12/bits/ranges_util.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h \
  /usr/include/opencv4/opencv2/core/cvstd.hpp /usr/include/c++/12/utility \
  /usr/include/c++/12/bits/stl_relops.h /usr/include/c++/12/cmath \
  /usr/include/math.h /usr/include/aarch64-linux-gnu/bits/math-vector.h \
@@ -276,13 +301,6 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
  /usr/include/c++/12/tr1/riemann_zeta.tcc \
  /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
- /usr/include/c++/12/memory \
- /usr/include/c++/12/bits/stl_raw_storage_iter.h \
- /usr/include/c++/12/bits/shared_ptr_atomic.h \
- /usr/include/c++/12/backward/auto_ptr.h \
- /usr/include/c++/12/bits/ranges_uninitialized.h \
- /usr/include/c++/12/bits/uses_allocator_args.h \
- /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/opencv4/opencv2/core/neon_utils.hpp \
  /usr/include/opencv4/opencv2/core/vsx_utils.hpp /usr/include/assert.h \
  /usr/include/opencv4/opencv2/core/check.hpp \
@@ -401,25 +419,7 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/filiphuser/Desktop/BaseStation/ServerObserver.h \
  /home/filiphuser/Desktop/BaseStation/Observer.h \
  /home/filiphuser/Desktop/BaseStation/JoystickObserver.h \
- /usr/include/linux/joystick.h /usr/include/linux/types.h \
- /usr/include/aarch64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/linux/input.h /usr/include/aarch64-linux-gnu/sys/ioctl.h \
- /usr/include/aarch64-linux-gnu/bits/ioctls.h \
- /usr/include/aarch64-linux-gnu/asm/ioctls.h \
- /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
- /usr/include/aarch64-linux-gnu/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h \
- /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
- /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
- /usr/include/linux/input-event-codes.h \
- /home/filiphuser/Desktop/BaseStation/Joystick.h /usr/include/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
- /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
- /home/filiphuser/Desktop/BaseStation/BaseStationBuilder.h \
- /home/filiphuser/Desktop/BaseStation/Builder.h \
- /home/filiphuser/Desktop/BaseStation/BaseStation.h
+ /home/filiphuser/Desktop/BaseStation/Director.h
