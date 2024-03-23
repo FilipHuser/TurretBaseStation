@@ -228,16 +228,9 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
  /usr/include/c++/12/stdlib.h /usr/include/c++/12/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
- /usr/include/c++/12/condition_variable /usr/include/c++/12/stop_token \
- /usr/include/c++/12/atomic /usr/include/c++/12/bits/std_thread.h \
- /usr/include/c++/12/semaphore /usr/include/c++/12/bits/semaphore_base.h \
- /usr/include/c++/12/bits/atomic_timed_wait.h \
- /usr/include/c++/12/bits/this_thread_sleep.h \
- /usr/include/aarch64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/aarch64-linux-gnu/bits/semaphore.h \
  /home/filiphuser/Desktop/BaseStation/Subject.h \
  /home/filiphuser/Desktop/BaseStation/Config.h \
+ /home/filiphuser/Desktop/BaseStation/Dismissable.h \
  /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
  /home/filiphuser/Desktop/BaseStation/Joystick.h /usr/include/fcntl.h \
  /usr/include/aarch64-linux-gnu/bits/fcntl.h \
@@ -247,7 +240,8 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: \
  /usr/include/linux/joystick.h /usr/include/linux/types.h \
  /usr/include/aarch64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/linux/input.h /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+ /usr/include/linux/input.h /usr/include/aarch64-linux-gnu/sys/time.h \
+ /usr/include/aarch64-linux-gnu/sys/ioctl.h \
  /usr/include/aarch64-linux-gnu/bits/ioctls.h \
  /usr/include/aarch64-linux-gnu/asm/ioctls.h \
  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \

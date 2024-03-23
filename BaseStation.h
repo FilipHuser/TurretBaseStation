@@ -7,8 +7,9 @@
 #include "ThreadsManager.h"
 #include "Joystick.h"
 #include "Display.h"
+#include "Dismissable.h"
 
-class BaseStation {
+class BaseStation : public Dismissable {
 public:
 //CONSTRUCTOR
     BaseStation() = default;

@@ -7,14 +7,17 @@
 
 #include "Config.h"
 
-class Display{
+class Display {
 public:
+//CONSTRUCTOR
     Display();
-    Display(int width , int height , std::string windowName);
 
+//METHODS
     void show();
-
     void refreshImgFrame(std::vector<char> img_buffer);
+
+//DECONSTRUCTOR
+    ~Display();
 
 private:
     int width;

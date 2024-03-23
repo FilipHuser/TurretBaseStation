@@ -5,11 +5,6 @@ Display::Display() : width(DISPLAY_WINDOW_W) , height(DISPLAY_WINDOW_H) , window
     this->img_frame = cv::Mat(this->height, this->width, CV_8UC3, cv::Scalar(0, 0, 0));
 }
 
-Display::Display(int width , int height , std::string windowName) : width(width) , height(height) , windowName(windowName)
-{
-    this->img_frame = cv::Mat(this->height, this->width, CV_8UC3, cv::Scalar(0, 0, 0));
-}
-
 void Display::show()
 {
 
@@ -20,6 +15,10 @@ void Display::show()
 void Display::refreshImgFrame(std::vector<char> img_buffer)
 {
     this->img_frame = cv::Mat(this->height, this->width, CV_8UC3, img_buffer.data());
-
     show();
+}
+
+Display::~Display()
+{
+    cv::destroyAllWindows();
 }

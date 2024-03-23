@@ -15,32 +15,34 @@
 #include <unistd.h>
 #include <pthread.h>
 
-#include "ThreadSafeQueue.h"
 #include "Subject.h"
 #include "Config.h"
+#include "Dismissable.h"
 
 struct Client{
     struct client_address;
 };
 
-class Server : public Subject {
+class Server : public Subject , public Dismissable {
 public:
 //CONSTRUCTOR
     Server();
 
     void createSocket(int port);
 
-//COMUNICATION
+//METHODS
     size_t sendData(const char* data , int clientIndex);
     size_t sendData(std::vector<char> data , int clientIndex);
-
     void* receiveData(int socketIndex);
     static void* receiveDataStatic(void* context);
+
+//GETTERS
+    std::vector<char>& getCamBuffer() { return this->cam_buffer; }
 
 //DESTRUCTOR
     ~Server();
 
-    
+private:
     std::vector<int> sockets;
 
     std::vector<char> cam_buffer;

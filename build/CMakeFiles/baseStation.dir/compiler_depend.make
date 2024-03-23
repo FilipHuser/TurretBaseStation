@@ -281,20 +281,9 @@ CMakeFiles/baseStation.dir/BaseStation.cpp.o: /home/filiphuser/Desktop/BaseStati
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
-  /usr/include/c++/12/condition_variable \
-  /usr/include/c++/12/stop_token \
-  /usr/include/c++/12/atomic \
-  /usr/include/c++/12/bits/std_thread.h \
-  /usr/include/c++/12/semaphore \
-  /usr/include/c++/12/bits/semaphore_base.h \
-  /usr/include/c++/12/bits/atomic_timed_wait.h \
-  /usr/include/c++/12/bits/this_thread_sleep.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
-  /usr/include/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
   /home/filiphuser/Desktop/BaseStation/Subject.h \
   /home/filiphuser/Desktop/BaseStation/Config.h \
+  /home/filiphuser/Desktop/BaseStation/Dismissable.h \
   /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
   /home/filiphuser/Desktop/BaseStation/Joystick.h \
   /usr/include/fcntl.h \
@@ -309,6 +298,7 @@ CMakeFiles/baseStation.dir/BaseStation.cpp.o: /home/filiphuser/Desktop/BaseStati
   /usr/include/asm-generic/types.h \
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/linux/input.h \
+  /usr/include/aarch64-linux-gnu/sys/time.h \
   /usr/include/aarch64-linux-gnu/sys/ioctl.h \
   /usr/include/aarch64-linux-gnu/bits/ioctls.h \
   /usr/include/aarch64-linux-gnu/asm/ioctls.h \
@@ -783,20 +773,9 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: /home/filiphuser/Desktop/Ba
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
-  /usr/include/c++/12/condition_variable \
-  /usr/include/c++/12/stop_token \
-  /usr/include/c++/12/atomic \
-  /usr/include/c++/12/bits/std_thread.h \
-  /usr/include/c++/12/semaphore \
-  /usr/include/c++/12/bits/semaphore_base.h \
-  /usr/include/c++/12/bits/atomic_timed_wait.h \
-  /usr/include/c++/12/bits/this_thread_sleep.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
-  /usr/include/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
   /home/filiphuser/Desktop/BaseStation/Subject.h \
   /home/filiphuser/Desktop/BaseStation/Config.h \
+  /home/filiphuser/Desktop/BaseStation/Dismissable.h \
   /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
   /home/filiphuser/Desktop/BaseStation/Joystick.h \
   /usr/include/fcntl.h \
@@ -811,6 +790,7 @@ CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o: /home/filiphuser/Desktop/Ba
   /usr/include/asm-generic/types.h \
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/linux/input.h \
+  /usr/include/aarch64-linux-gnu/sys/time.h \
   /usr/include/aarch64-linux-gnu/sys/ioctl.h \
   /usr/include/aarch64-linux-gnu/bits/ioctls.h \
   /usr/include/aarch64-linux-gnu/asm/ioctls.h \
@@ -2292,17 +2272,7 @@ CMakeFiles/baseStation.dir/JoystickObserver.cpp.o: /home/filiphuser/Desktop/Base
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
-  /usr/include/c++/12/condition_variable \
-  /usr/include/c++/12/stop_token \
-  /usr/include/c++/12/atomic \
-  /usr/include/c++/12/bits/std_thread.h \
-  /usr/include/c++/12/semaphore \
-  /usr/include/c++/12/bits/semaphore_base.h \
-  /usr/include/c++/12/bits/atomic_timed_wait.h \
-  /usr/include/c++/12/bits/this_thread_sleep.h \
-  /usr/include/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h
+  /home/filiphuser/Desktop/BaseStation/Dismissable.h
 
 CMakeFiles/baseStation.dir/Server.cpp.o: /home/filiphuser/Desktop/BaseStation/Server.cpp \
   /usr/include/stdc-predef.h \
@@ -2547,18 +2517,19 @@ CMakeFiles/baseStation.dir/Server.cpp.o: /home/filiphuser/Desktop/BaseStation/Se
   /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
   /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
-  /usr/include/c++/12/condition_variable \
+  /home/filiphuser/Desktop/BaseStation/Subject.h \
+  /usr/include/c++/12/memory \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/12/bits/align.h \
+  /usr/include/c++/12/bit \
+  /usr/include/c++/12/bits/unique_ptr.h \
   /usr/include/c++/12/bits/shared_ptr.h \
   /usr/include/c++/12/bits/shared_ptr_base.h \
   /usr/include/c++/12/bits/allocated_ptr.h \
-  /usr/include/c++/12/bits/unique_ptr.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
   /usr/include/c++/12/ext/concurrence.h \
-  /usr/include/c++/12/bit \
-  /usr/include/c++/12/bits/align.h \
-  /usr/include/c++/12/stop_token \
-  /usr/include/c++/12/atomic \
+  /usr/include/c++/12/bits/shared_ptr_atomic.h \
   /usr/include/c++/12/bits/atomic_base.h \
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/bits/atomic_wait.h \
@@ -2577,26 +2548,14 @@ CMakeFiles/baseStation.dir/Server.cpp.o: /home/filiphuser/Desktop/BaseStation/Se
   /usr/include/aarch64-linux-gnu/asm/unistd.h \
   /usr/include/asm-generic/unistd.h \
   /usr/include/aarch64-linux-gnu/bits/syscall.h \
-  /usr/include/c++/12/bits/std_thread.h \
-  /usr/include/c++/12/semaphore \
-  /usr/include/c++/12/bits/semaphore_base.h \
-  /usr/include/c++/12/bits/atomic_timed_wait.h \
-  /usr/include/c++/12/bits/this_thread_sleep.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
-  /usr/include/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
-  /home/filiphuser/Desktop/BaseStation/Subject.h \
-  /usr/include/c++/12/memory \
-  /usr/include/c++/12/bits/stl_tempbuf.h \
-  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/12/bits/shared_ptr_atomic.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /usr/include/c++/12/bits/ranges_uninitialized.h \
   /usr/include/c++/12/bits/ranges_algobase.h \
   /usr/include/c++/12/bits/uses_allocator_args.h \
   /usr/include/c++/12/pstl/glue_memory_defs.h \
   /usr/include/c++/12/pstl/execution_defs.h \
-  /home/filiphuser/Desktop/BaseStation/Config.h
+  /home/filiphuser/Desktop/BaseStation/Config.h \
+  /home/filiphuser/Desktop/BaseStation/Dismissable.h
 
 CMakeFiles/baseStation.dir/ServerObserver.cpp.o: /home/filiphuser/Desktop/BaseStation/ServerObserver.cpp \
   /usr/include/stdc-predef.h \
@@ -3060,19 +3019,8 @@ CMakeFiles/baseStation.dir/ServerObserver.cpp.o: /home/filiphuser/Desktop/BaseSt
   /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/aarch64-linux-gnu/bits/in.h \
   /usr/include/arpa/inet.h \
-  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
-  /usr/include/c++/12/condition_variable \
-  /usr/include/c++/12/stop_token \
-  /usr/include/c++/12/atomic \
-  /usr/include/c++/12/bits/std_thread.h \
-  /usr/include/c++/12/semaphore \
-  /usr/include/c++/12/bits/semaphore_base.h \
-  /usr/include/c++/12/bits/atomic_timed_wait.h \
-  /usr/include/c++/12/bits/this_thread_sleep.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
-  /usr/include/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
   /home/filiphuser/Desktop/BaseStation/Subject.h \
+  /home/filiphuser/Desktop/BaseStation/Dismissable.h \
   /home/filiphuser/Desktop/BaseStation/Observer.h
 
 CMakeFiles/baseStation.dir/Subject.cpp.o: /home/filiphuser/Desktop/BaseStation/Subject.cpp \
@@ -3728,20 +3676,9 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h \
-  /usr/include/c++/12/condition_variable \
-  /usr/include/c++/12/stop_token \
-  /usr/include/c++/12/atomic \
-  /usr/include/c++/12/bits/std_thread.h \
-  /usr/include/c++/12/semaphore \
-  /usr/include/c++/12/bits/semaphore_base.h \
-  /usr/include/c++/12/bits/atomic_timed_wait.h \
-  /usr/include/c++/12/bits/this_thread_sleep.h \
-  /usr/include/aarch64-linux-gnu/sys/time.h \
-  /usr/include/semaphore.h \
-  /usr/include/aarch64-linux-gnu/bits/semaphore.h \
   /home/filiphuser/Desktop/BaseStation/Subject.h \
   /home/filiphuser/Desktop/BaseStation/Config.h \
+  /home/filiphuser/Desktop/BaseStation/Dismissable.h \
   /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
   /home/filiphuser/Desktop/BaseStation/Joystick.h \
   /usr/include/fcntl.h \
@@ -3756,6 +3693,7 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
   /usr/include/asm-generic/types.h \
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/linux/input.h \
+  /usr/include/aarch64-linux-gnu/sys/time.h \
   /usr/include/aarch64-linux-gnu/sys/ioctl.h \
   /usr/include/aarch64-linux-gnu/bits/ioctls.h \
   /usr/include/aarch64-linux-gnu/asm/ioctls.h \
@@ -3990,6 +3928,8 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 
 /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
 
+/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
+
 /usr/include/opencv4/opencv2/ml.hpp:
 
 /usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
@@ -4067,6 +4007,8 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
 /usr/include/opencv4/opencv2/core/ovx.hpp:
+
+/usr/include/c++/12/bits/erase_if.h:
 
 /usr/include/c++/12/bits/unordered_map.h:
 
@@ -4148,6 +4090,12 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 
 /usr/include/math.h:
 
+/home/filiphuser/Desktop/BaseStation/BaseStationBuilder.cpp:
+
+/usr/include/opencv4/opencv2/flann/autotuned_index.h:
+
+/usr/include/c++/12/cmath:
+
 /usr/include/c++/12/bits/stl_relops.h:
 
 /usr/include/c++/12/utility:
@@ -4204,8 +4152,6 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 
 /usr/include/aarch64-linux-gnu/bits/stat.h:
 
-/usr/include/linux/falloc.h:
-
 /usr/include/aarch64-linux-gnu/bits/fcntl.h:
 
 /usr/include/fcntl.h:
@@ -4214,31 +4160,11 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 
 /home/filiphuser/Desktop/BaseStation/ThreadsManager.h:
 
+/usr/include/linux/falloc.h:
+
+/home/filiphuser/Desktop/BaseStation/Dismissable.h:
+
 /home/filiphuser/Desktop/BaseStation/Config.h:
-
-/usr/include/semaphore.h:
-
-/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
-
-/usr/include/c++/12/bits/this_thread_sleep.h:
-
-/usr/include/c++/12/bits/erase_if.h:
-
-/usr/include/c++/12/bits/atomic_timed_wait.h:
-
-/usr/include/c++/12/bits/semaphore_base.h:
-
-/usr/include/c++/12/semaphore:
-
-/usr/include/c++/12/bits/std_thread.h:
-
-/home/filiphuser/Desktop/BaseStation/BaseStationBuilder.cpp:
-
-/usr/include/opencv4/opencv2/flann/autotuned_index.h:
-
-/usr/include/c++/12/cmath:
-
-/usr/include/c++/12/stop_token:
 
 /usr/include/opencv4/opencv2/dnn/dict.hpp:
 
@@ -4440,8 +4366,6 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 
 /usr/include/c++/12/bits/hash_bytes.h:
 
-/usr/include/c++/12/atomic:
-
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/aarch64-linux-gnu/bits/fp-logb.h:
@@ -4545,8 +4469,6 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 /usr/include/c++/12/cstddef:
 
 /usr/include/c++/12/cerrno:
-
-/home/filiphuser/Desktop/BaseStation/ThreadSafeQueue.h:
 
 /usr/include/aarch64-linux-gnu/bits/posix_opt.h:
 
@@ -4668,8 +4590,6 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 
 /usr/include/c++/12/bits/stl_multimap.h:
 
-/usr/include/c++/12/condition_variable:
-
 /usr/include/aarch64-linux-gnu/bits/time64.h:
 
 /usr/include/alloca.h:
@@ -4765,8 +4685,6 @@ CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main
 /usr/include/c++/12/initializer_list:
 
 /usr/include/c++/12/bits/shared_ptr.h:
-
-/usr/include/aarch64-linux-gnu/bits/semaphore.h:
 
 /usr/include/c++/12/bits/ranges_base.h:
 

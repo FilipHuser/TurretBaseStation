@@ -12,14 +12,12 @@ void BaseStation::run()
 
     this->tManager->createThread(this->server->receiveDataStatic , &CAMargs);
     this->tManager->createThread(this->server->receiveDataStatic , &COMargs);
-
     this->tManager->createThread(this->joystick->monitorJoystickStatic , this->joystick.get());
 }
 
 BaseStation::~BaseStation()
 {
-    //this->Server->dissmiss();
-    //this->display->dismiss();
+    this->server->dismiss();
     this->joystick->dismiss();
 
     this->tManager->joinAllThreads();
