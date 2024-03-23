@@ -88,16 +88,10 @@ void* Server::receiveData(int socketIndex)
         {
             case 0:
                 this->cam_buffer.insert(this->cam_buffer.end() , buffer, buffer + received_bytes);
-                if(this->cam_buffer.size() >= 921600) { notify(); this->cam_buffer.clear(); }
+                if(this->cam_buffer.size() >= DISPLAY_WINDOW_W * DISPLAY_WINDOW_H * CHANNELS_COUNT) { notify(); this->cam_buffer.clear(); }
                 
             break;
-
-            case 1:
-                std::cout << buffer << std::endl;
-            break;
-
         }
-
         memset(buffer , 0, sizeof(buffer));
     }
 }

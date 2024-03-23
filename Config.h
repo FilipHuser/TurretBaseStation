@@ -19,6 +19,7 @@
 
 #define DISPLAY_WINDOW_W 640
 #define DISPLAY_WINDOW_H  480
+#define CHANNELS_COUNT 3
 #define DISPLAY_WINDOW_NAME "Turret vision"
 
 //---------------------------------------------------

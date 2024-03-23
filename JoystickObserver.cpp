@@ -2,25 +2,23 @@
 
 std::string joystickCommandFormatter(struct js_event js)
 {
-    std::string cmd_base = "M:";
+    std::string cmd_base = "";
 
     switch(js.type & ~JS_EVENT_INIT)
     {
         case JS_EVENT_AXIS:
-
+            cmd_base += "M:";
             if(js.number == 0) //X axis
             {
                 cmd_base += "ST:";
             } else {
                 cmd_base += "SE:";
             }
-
         break;
 
         case JS_EVENT_BUTTON:
-
-            if(js.number == 0) { return cmd_base += "SH"; }
-            break;
+            if(js.number == 0) { return cmd_base += "T:F"; }
+        break;
     }
 
     if (js.value > 0)  //
@@ -41,7 +39,7 @@ std::string joystickCommandFormatter(struct js_event js)
         result = "H"; // H => HIGH
     }
 
-return cmd_base + result;
+    return cmd_base + result;
 }
 
 void JoystickObserver::update(Subject* subject)
@@ -49,8 +47,6 @@ void JoystickObserver::update(Subject* subject)
     if (Joystick* j = dynamic_cast<Joystick*>(subject))
     {
         std::string cmd = joystickCommandFormatter(j->get_joystick());
-        
-        //std::cout << cmd << std::endl;
         server->sendData(cmd.c_str() , 0);
     }
 }

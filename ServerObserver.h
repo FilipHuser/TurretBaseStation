@@ -7,8 +7,10 @@
 
 class ServerObserver : public Observer {
 public:
+//CONSTRUCTOR
     ServerObserver(Display* display) : display(display) {}
-
+    
+//METHODS
     void update(Subject* subject) override;
 
 private:

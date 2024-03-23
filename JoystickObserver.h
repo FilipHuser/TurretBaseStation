@@ -12,8 +12,10 @@
 
 class JoystickObserver : public Observer {
 public:
+//CONSTRUCTOR
     JoystickObserver(Server* server) : server(server) {};
 
+//METHODS
     void update(Subject* subject) override;
 
 private:

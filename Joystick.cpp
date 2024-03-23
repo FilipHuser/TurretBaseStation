@@ -1,15 +1,12 @@
 #include "Joystick.h"
 
-Joystick::Joystick() : fd(-1) , loop(1)
+Joystick::Joystick() : fd(-1)
 {
-    // Open the joystick device
     this->fd = open("/dev/input/js0", O_RDONLY);
     if (fd == -1) {
         perror("open");
         exit(1);
     }
-
-
 }
 
 void* Joystick::monitorJoystickStatic(void* context)
@@ -19,7 +16,7 @@ void* Joystick::monitorJoystickStatic(void* context)
 
 void* Joystick::monitorJoystick()
 {
-    while (1) 
+    while (this->loop) 
     {
         if (read(this->fd, &this->joystick, sizeof(this->joystick)) != sizeof(this->joystick)) {
             perror("read");

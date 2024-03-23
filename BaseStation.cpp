@@ -19,6 +19,5 @@ BaseStation::~BaseStation()
 {
     this->server->dismiss();
     this->joystick->dismiss();
-
     this->tManager->joinAllThreads();
 }

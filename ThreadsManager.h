@@ -8,7 +8,9 @@
 
 class ThreadsManager{
 public:
+//CONSTRUCTOR
     ThreadsManager() = default;
+//METHODS
     void createThread(void* (*threadFunction)(void*) , void* arg);
     void joinAllThreads();
 private:
