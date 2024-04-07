@@ -15,6 +15,7 @@ public:
 
 // SETTERS
     void setDisplay(Display* display) { this->display = display; }
+    
 
 private:
     Display* display;
