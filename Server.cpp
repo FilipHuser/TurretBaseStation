@@ -7,40 +7,6 @@ Server::Server()
     createSocket(SERVER_SET_PORT);     // SET = settings socket
 
     createClient(TURRET_1_IP);
-
-
-    std::cout << clients[0].addresses.size() << std::endl;
-
-    std::cout << "Port: " << ntohs(clients[0].addresses[1].sin_port) << std::endl;
-}
-
-void Server::createClient(std::string clientIP)
-{
-    Client c;
-    struct sockaddr_in client_address;
-
-    memset(&client_address, 0, sizeof(client_address));
-    client_address.sin_family = AF_INET;
-    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
-    client_address.sin_port = htons(CLIENT_CAM_PORT);
-
-    c.addresses.push_back(client_address);
-
-    memset(&client_address, 0, sizeof(client_address));
-    client_address.sin_family = AF_INET;
-    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
-    client_address.sin_port = htons(CLIENT_COM_PORT);
-
-    c.addresses.push_back(client_address);
-
-    memset(&client_address, 0, sizeof(client_address));
-    client_address.sin_family = AF_INET;
-    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
-    client_address.sin_port = htons(CLIENT_SET_PORT);
-
-    c.addresses.push_back(client_address);
-
-    this->clients.push_back(c);
 }
 
 void Server::createSocket(int port)
@@ -78,6 +44,35 @@ void Server::createSocket(int port)
 
 
     this->sockets.push_back(serverSocket);
+}
+
+void Server::createClient(std::string clientIP)
+{
+    Client c;
+    struct sockaddr_in client_address;
+
+    memset(&client_address, 0, sizeof(client_address));
+    client_address.sin_family = AF_INET;
+    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
+    client_address.sin_port = htons(CLIENT_CAM_PORT);
+
+    c.addresses.push_back(client_address);
+
+    memset(&client_address, 0, sizeof(client_address));
+    client_address.sin_family = AF_INET;
+    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
+    client_address.sin_port = htons(CLIENT_COM_PORT);
+
+    c.addresses.push_back(client_address);
+
+    memset(&client_address, 0, sizeof(client_address));
+    client_address.sin_family = AF_INET;
+    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
+    client_address.sin_port = htons(CLIENT_SET_PORT);
+
+    c.addresses.push_back(client_address);
+
+    this->clients.push_back(c);
 }
 
 void* Server::receiveDataStatic(void* context)
