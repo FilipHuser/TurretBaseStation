@@ -6,13 +6,41 @@ Server::Server()
     createSocket(SERVER_COM_PORT);     // COM = communication socket
     createSocket(SERVER_SET_PORT);     // SET = settings socket
 
-    struct sockaddr_in clientAddress;
-    memset(&clientAddress, 0, sizeof(clientAddress));
-    clientAddress.sin_family = AF_INET;
-    clientAddress.sin_addr.s_addr = inet_addr(TURRET_1_IP);
-    clientAddress.sin_port = htons(TURRET_PORT);
+    createClient(TURRET_1_IP);
 
-    this->client_addresses.push_back(clientAddress);
+
+    std::cout << clients[0].addresses.size() << std::endl;
+
+    std::cout << "Port: " << ntohs(clients[0].addresses[1].sin_port) << std::endl;
+}
+
+void Server::createClient(std::string clientIP)
+{
+    Client c;
+    struct sockaddr_in client_address;
+
+    memset(&client_address, 0, sizeof(client_address));
+    client_address.sin_family = AF_INET;
+    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
+    client_address.sin_port = htons(CLIENT_CAM_PORT);
+
+    c.addresses.push_back(client_address);
+
+    memset(&client_address, 0, sizeof(client_address));
+    client_address.sin_family = AF_INET;
+    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
+    client_address.sin_port = htons(CLIENT_COM_PORT);
+
+    c.addresses.push_back(client_address);
+
+    memset(&client_address, 0, sizeof(client_address));
+    client_address.sin_family = AF_INET;
+    client_address.sin_addr.s_addr = inet_addr(clientIP.c_str());
+    client_address.sin_port = htons(CLIENT_SET_PORT);
+
+    c.addresses.push_back(client_address);
+
+    this->clients.push_back(c);
 }
 
 void Server::createSocket(int port)
@@ -23,12 +51,6 @@ void Server::createSocket(int port)
     if((serverSocket = socket(AF_INET , SOCK_DGRAM , 0)) < 0)
     {
         perror("socket");
-        exit(EXIT_FAILURE);
-    }
-
-    int bufferSize = 212992;
-    if (setsockopt(serverSocket, SOL_SOCKET, SO_RCVBUF, &bufferSize, sizeof(bufferSize)) < 0) {
-        perror("setsockopt");
         exit(EXIT_FAILURE);
     }
 
@@ -102,7 +124,7 @@ void* Server::receiveData(int socketIndex)
         {
             case 0:
                 this->cam_buffer.insert(this->cam_buffer.end(), buffer, buffer + received_bytes);
-                notify();
+                notify(0);
                 this->cam_buffer.clear();
             break;
 
@@ -118,7 +140,7 @@ void* Server::receiveData(int socketIndex)
 size_t Server::sendData(const char* data , int clientIndex , int socketIndex) 
 {
     size_t bytesSent{0};
-    if ((bytesSent = sendto(this->sockets[socketIndex], data, strlen(data), 0, (struct sockaddr*)&this->client_addresses[clientIndex], sizeof(this->client_addresses[clientIndex]))) < 0) 
+    if ((bytesSent = sendto(this->sockets[socketIndex], data, strlen(data), 0, (struct sockaddr*)&(this->clients[clientIndex].addresses[socketIndex]), sizeof(this->clients[clientIndex].addresses[socketIndex]))) < 0) 
     {
         perror("sendto");
         exit(EXIT_FAILURE);
@@ -129,7 +151,7 @@ size_t Server::sendData(const char* data , int clientIndex , int socketIndex)
 size_t Server::sendData(std::vector<char> data , int clientIndex , int socketIndex) 
 {
     size_t bytesSent{0};
-    if ((bytesSent = sendto(this->sockets[socketIndex], data.data(), data.size(), 0, (struct sockaddr*)&this->client_addresses[clientIndex], sizeof(this->client_addresses[clientIndex]))) < 0) 
+    if ((bytesSent = sendto(this->sockets[socketIndex], data.data(), data.size(), 0, (struct sockaddr*)&(this->clients[clientIndex].addresses[socketIndex]), sizeof(this->clients[clientIndex].addresses[socketIndex]))) < 0) 
     {
         perror("sendto");
         exit(EXIT_FAILURE);

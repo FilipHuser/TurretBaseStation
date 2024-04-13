@@ -17,7 +17,7 @@ std::string joystickCommandFormatter(struct js_event js)
         break;
 
         case JS_EVENT_BUTTON:
-            if(js.number == 0 && js.value == 1) { return cmd_base += "T:F"; }
+            if(js.number == 0 && js.value == 1) { std::cout << "ted" << std::endl ;return cmd_base += "T:F"; }
         break;
     }
 

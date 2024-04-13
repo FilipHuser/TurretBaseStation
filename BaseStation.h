@@ -16,6 +16,7 @@ public:
 
 //METHODS
     void run();
+    //void handleSettings(std::string cmd)
 
 //SETTERS
     void setServer(std::unique_ptr<Server> server) { this->server = std::move(server); }

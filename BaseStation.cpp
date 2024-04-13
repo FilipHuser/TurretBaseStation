@@ -15,7 +15,7 @@ void BaseStation::run()
     SETargs.second = this->server.get();
 
     this->tManager->createThread(this->server->receiveDataStatic , &CAMargs);
-    //this->tManager->createThread(this->server->receiveDataStatic , &COMargs);
+    this->tManager->createThread(this->server->receiveDataStatic , &COMargs);
     this->tManager->createThread(this->server->receiveDataStatic , &SETargs);
 
     this->tManager->createThread(this->joystick->monitorJoystickStatic , this->joystick.get());

@@ -20,9 +20,8 @@
 #include <sys/time.h>
 #include <ctime>
 
-
 struct Client{
-    struct client_address;
+    std::vector<struct sockaddr_in> addresses; //3
 };
 
 class Server : public Subject , public Dismissable {
@@ -31,6 +30,7 @@ public:
     Server();
 
     void createSocket(int port);
+    void createClient(std::string clientIP);
 
 //METHODS
     size_t sendData(const char* data , int clientIndex , int socketIndex);
@@ -49,7 +49,7 @@ private:
     std::vector<char> cam_buffer;
     std::vector<char> com_buffer;
     std::vector<char> set_buffer;
-    std::vector<struct sockaddr_in> client_addresses;
+    std::vector<Client> clients;
 };
 
 #endif //SERVER_H
