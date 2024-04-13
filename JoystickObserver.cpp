@@ -1,6 +1,6 @@
 #include "JoystickObserver.h"
 
-std::string joystickCommandFormatter(struct js_event js)
+std::pair<int , std::string> joystickCommandFormatter(struct js_event js)
 {
     std::string cmd_base = "";
 
@@ -17,7 +17,9 @@ std::string joystickCommandFormatter(struct js_event js)
         break;
 
         case JS_EVENT_BUTTON:
-            if(js.number == 0 && js.value == 1) { std::cout << "ted" << std::endl ;return cmd_base += "T:F"; }
+            if(js.number == 0 && js.value == 1) { return std::make_pair(1 , cmd_base += "T:F");}
+
+            if(js.number == 1 && js.value == 1) { return std::make_pair(2 , cmd_base + "SET:T:"); }
         break;
     }
 
@@ -40,18 +42,17 @@ std::string joystickCommandFormatter(struct js_event js)
         } else if (value <= JOYSTICK_MAX_THRESHOLD) {
             result = "H"; // H => HIGH
         }
-        return cmd_base + result;
+        return std::make_pair(1 , cmd_base + result);
     }
 
-    return "";
+    return std::make_pair(-1 , "");
 }
 
 void JoystickObserver::update(Subject* subject)
 {
     if (Joystick* j = dynamic_cast<Joystick*>(subject))
     {
-        std::string cmd = joystickCommandFormatter(j->get_joystick());
-
-        if(!cmd.empty()) { server->sendData(cmd.c_str() , 0 , 1); }
+        std::pair<int , std::string> cmd = joystickCommandFormatter(j->get_joystick());
+        if(!cmd.second.empty()) { server->sendData(cmd.second.c_str() , 0 , cmd.first); }
     }
 }
