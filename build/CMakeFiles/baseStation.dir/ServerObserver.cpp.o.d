@@ -150,8 +150,8 @@ CMakeFiles/baseStation.dir/ServerObserver.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/12/cerrno /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/aarch64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc /usr/include/c++/12/utility \
@@ -234,9 +234,8 @@ CMakeFiles/baseStation.dir/ServerObserver.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/syscall.h \
  /usr/include/aarch64-linux-gnu/sys/syscall.h \
- /usr/include/aarch64-linux-gnu/asm/unistd.h \
- /usr/include/asm-generic/unistd.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/lib/linux/uapi/arm64/asm/unistd.h /usr/include/asm-generic/unistd.h \
+ /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
  /usr/include/asm-generic/bitsperlong.h \
  /usr/include/aarch64-linux-gnu/bits/syscall.h \
  /usr/include/c++/12/bits/std_mutex.h \
@@ -373,6 +372,7 @@ CMakeFiles/baseStation.dir/ServerObserver.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/filiphuser/Desktop/BaseStation/Subject.h \
  /home/filiphuser/Desktop/BaseStation/Config.h \
  /home/filiphuser/Desktop/BaseStation/Server.h /usr/include/netinet/in.h \
  /usr/include/aarch64-linux-gnu/sys/socket.h \
@@ -380,12 +380,11 @@ CMakeFiles/baseStation.dir/ServerObserver.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/socket.h \
  /usr/include/aarch64-linux-gnu/bits/socket_type.h \
  /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
- /usr/include/aarch64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+ /usr/lib/linux/uapi/arm64/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/lib/linux/uapi/arm64/asm/posix_types.h \
  /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/sockios.h \
+ /usr/lib/linux/uapi/arm64/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
@@ -393,7 +392,6 @@ CMakeFiles/baseStation.dir/ServerObserver.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
  /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
- /home/filiphuser/Desktop/BaseStation/Subject.h \
  /home/filiphuser/Desktop/BaseStation/Dismissable.h \
  /usr/include/aarch64-linux-gnu/sys/time.h \
  /home/filiphuser/Desktop/BaseStation/Observer.h

@@ -133,8 +133,8 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/12/cerrno /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/aarch64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
@@ -192,9 +192,8 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/syscall.h \
  /usr/include/aarch64-linux-gnu/sys/syscall.h \
- /usr/include/aarch64-linux-gnu/asm/unistd.h \
- /usr/include/asm-generic/unistd.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/lib/linux/uapi/arm64/asm/unistd.h /usr/include/asm-generic/unistd.h \
+ /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
  /usr/include/asm-generic/bitsperlong.h \
  /usr/include/aarch64-linux-gnu/bits/syscall.h \
  /usr/include/c++/12/bits/std_mutex.h \
@@ -212,12 +211,11 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/socket.h \
  /usr/include/aarch64-linux-gnu/bits/socket_type.h \
  /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
- /usr/include/aarch64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+ /usr/lib/linux/uapi/arm64/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/lib/linux/uapi/arm64/asm/posix_types.h \
  /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/sockios.h \
+ /usr/lib/linux/uapi/arm64/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
@@ -238,13 +236,12 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /home/filiphuser/Desktop/BaseStation/ThreadsManager.h \
  /home/filiphuser/Desktop/BaseStation/Joystick.h \
  /usr/include/linux/joystick.h /usr/include/linux/types.h \
- /usr/include/aarch64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/linux/input.h /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+ /usr/lib/linux/uapi/arm64/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h /usr/include/linux/input.h \
+ /usr/include/aarch64-linux-gnu/sys/ioctl.h \
  /usr/include/aarch64-linux-gnu/bits/ioctls.h \
- /usr/include/aarch64-linux-gnu/asm/ioctls.h \
- /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
- /usr/include/aarch64-linux-gnu/asm/ioctl.h \
+ /usr/lib/linux/uapi/arm64/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/lib/linux/uapi/arm64/asm/ioctl.h \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
@@ -418,4 +415,10 @@ CMakeFiles/baseStation.dir/main.cpp.o: \
  /home/filiphuser/Desktop/BaseStation/ServerObserver.h \
  /home/filiphuser/Desktop/BaseStation/Observer.h \
  /home/filiphuser/Desktop/BaseStation/JoystickObserver.h \
+ /home/filiphuser/Desktop/BaseStation/Utilities.h \
+ /usr/include/openssl/aes.h /usr/include/openssl/macros.h \
+ /usr/include/aarch64-linux-gnu/openssl/opensslconf.h \
+ /usr/include/aarch64-linux-gnu/openssl/configuration.h \
+ /usr/include/openssl/opensslv.h \
+ /home/filiphuser/Desktop/BaseStation/DisplayObserver.h \
  /home/filiphuser/Desktop/BaseStation/Director.h

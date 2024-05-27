@@ -134,8 +134,8 @@ CMakeFiles/baseStation.dir/Server.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/12/cerrno /usr/include/errno.h \
  /usr/include/aarch64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/aarch64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/lib/linux/uapi/arm64/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
@@ -163,14 +163,13 @@ CMakeFiles/baseStation.dir/Server.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/socket.h \
  /usr/include/aarch64-linux-gnu/bits/socket_type.h \
  /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
- /usr/include/aarch64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+ /usr/lib/linux/uapi/arm64/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/lib/linux/uapi/arm64/asm/posix_types.h \
  /usr/include/asm-generic/posix_types.h \
- /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
  /usr/include/asm-generic/bitsperlong.h \
- /usr/include/aarch64-linux-gnu/asm/sockios.h \
+ /usr/lib/linux/uapi/arm64/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/aarch64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
@@ -211,8 +210,7 @@ CMakeFiles/baseStation.dir/Server.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h /usr/include/syscall.h \
  /usr/include/aarch64-linux-gnu/sys/syscall.h \
- /usr/include/aarch64-linux-gnu/asm/unistd.h \
- /usr/include/asm-generic/unistd.h \
+ /usr/lib/linux/uapi/arm64/asm/unistd.h /usr/include/asm-generic/unistd.h \
  /usr/include/aarch64-linux-gnu/bits/syscall.h \
  /usr/include/c++/12/bits/std_mutex.h \
  /usr/include/c++/12/backward/auto_ptr.h \

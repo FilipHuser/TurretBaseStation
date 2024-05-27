@@ -270,29 +270,29 @@ Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Display.cpp.s
 .PHONY : Display.cpp.s
 
-Include/ABE_ADCPi.o: Include/ABE_ADCPi.cpp.o
-.PHONY : Include/ABE_ADCPi.o
+DisplayObserver.o: DisplayObserver.cpp.o
+.PHONY : DisplayObserver.o
 
 # target to build an object file
-Include/ABE_ADCPi.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o
-.PHONY : Include/ABE_ADCPi.cpp.o
+DisplayObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.o
+.PHONY : DisplayObserver.cpp.o
 
-Include/ABE_ADCPi.i: Include/ABE_ADCPi.cpp.i
-.PHONY : Include/ABE_ADCPi.i
+DisplayObserver.i: DisplayObserver.cpp.i
+.PHONY : DisplayObserver.i
 
 # target to preprocess a source file
-Include/ABE_ADCPi.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.i
-.PHONY : Include/ABE_ADCPi.cpp.i
+DisplayObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.i
+.PHONY : DisplayObserver.cpp.i
 
-Include/ABE_ADCPi.s: Include/ABE_ADCPi.cpp.s
-.PHONY : Include/ABE_ADCPi.s
+DisplayObserver.s: DisplayObserver.cpp.s
+.PHONY : DisplayObserver.s
 
 # target to generate assembly for a file
-Include/ABE_ADCPi.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.s
-.PHONY : Include/ABE_ADCPi.cpp.s
+DisplayObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/DisplayObserver.cpp.s
+.PHONY : DisplayObserver.cpp.s
 
 Joystick.o: Joystick.cpp.o
 .PHONY : Joystick.o
@@ -438,6 +438,30 @@ ThreadsManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/ThreadsManager.cpp.s
 .PHONY : ThreadsManager.cpp.s
 
+Utilities.o: Utilities.cpp.o
+.PHONY : Utilities.o
+
+# target to build an object file
+Utilities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Utilities.cpp.o
+.PHONY : Utilities.cpp.o
+
+Utilities.i: Utilities.cpp.i
+.PHONY : Utilities.i
+
+# target to preprocess a source file
+Utilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Utilities.cpp.i
+.PHONY : Utilities.cpp.i
+
+Utilities.s: Utilities.cpp.s
+.PHONY : Utilities.s
+
+# target to generate assembly for a file
+Utilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/baseStation.dir/build.make CMakeFiles/baseStation.dir/Utilities.cpp.s
+.PHONY : Utilities.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -487,9 +511,9 @@ help:
 	@echo "... Display.o"
 	@echo "... Display.i"
 	@echo "... Display.s"
-	@echo "... Include/ABE_ADCPi.o"
-	@echo "... Include/ABE_ADCPi.i"
-	@echo "... Include/ABE_ADCPi.s"
+	@echo "... DisplayObserver.o"
+	@echo "... DisplayObserver.i"
+	@echo "... DisplayObserver.s"
 	@echo "... Joystick.o"
 	@echo "... Joystick.i"
 	@echo "... Joystick.s"
@@ -508,6 +532,9 @@ help:
 	@echo "... ThreadsManager.o"
 	@echo "... ThreadsManager.i"
 	@echo "... ThreadsManager.s"
+	@echo "... Utilities.o"
+	@echo "... Utilities.i"
+	@echo "... Utilities.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

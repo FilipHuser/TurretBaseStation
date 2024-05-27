@@ -5,9 +5,10 @@
 #include <string>
 #include <vector>
 
+#include "Subject.h"
 #include "Config.h"
 
-class Display {
+class Display : public Subject {
 public:
 //CONSTRUCTOR
     Display();

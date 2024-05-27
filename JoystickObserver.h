@@ -10,6 +10,7 @@
 #include "Joystick.h"
 #include "Observer.h"
 #include "Server.h"
+#include "Utilities.h"
 
 class JoystickObserver : public Observer {
 public:

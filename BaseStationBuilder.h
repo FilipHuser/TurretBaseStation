@@ -12,6 +12,7 @@
 #include "Config.h"
 #include "ServerObserver.h"
 #include "JoystickObserver.h"
+#include "DisplayObserver.h"
 
 class BaseStationBuilder : public Builder{
 public:

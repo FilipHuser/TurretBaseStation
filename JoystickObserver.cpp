@@ -53,6 +53,7 @@ void JoystickObserver::update(Subject* subject)
     if (Joystick* j = dynamic_cast<Joystick*>(subject))
     {
         std::pair<int , std::string> cmd = joystickCommandFormatter(j->get_joystick());
+        
         if(!cmd.second.empty()) { server->sendData(cmd.second.c_str() , 0 , cmd.first); }
     }
 }

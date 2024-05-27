@@ -14,16 +14,15 @@
 #define MAX_BUFFER_SIZE 65000
 #define MAX_CLIENTS_QUEUE 5
 
-#define TURRET_1_IP "192.168.2.2"
-#define TURRET_PORT 1028
+#define TURRET_1_IP "10.0.0.2"
 
 //---------------------------------------------------
 
 //-------------------- DISPLAY ----------------------
 
-#define DISPLAY_WINDOW_W 640
+#define DISPLAY_WINDOW_W 800
 #define DISPLAY_WINDOW_H  480
-#define CHANNELS_COUNT 1
+#define CHANNELS_COUNT 3
 #define DISPLAY_WINDOW_NAME "Turret vision"
 
 //---------------------------------------------------

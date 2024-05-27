@@ -1,5 +1,5 @@
-#ifndef DISPLAY_OBSERVER_H
-#define DISPLAY_OBSERVER_H
+#ifndef SERVER_OBSERVER_H
+#define SERVER_OBSERVER_H
 
 #include "Display.h"
 #include "Server.h"
@@ -17,4 +17,4 @@ private:
     Display* display;
 };
 
-#endif //DISPLAY_OBSERVER_H
+#endif //SERVER_OBSERVER_H

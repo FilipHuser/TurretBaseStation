@@ -125,19 +125,19 @@ CMakeFiles/baseStation.dir/Display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/baseStation.dir/Display.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filiphuser/Desktop/BaseStation/Display.cpp -o CMakeFiles/baseStation.dir/Display.cpp.s
 
-CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o: CMakeFiles/baseStation.dir/flags.make
-CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o: /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.cpp
-CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o: CMakeFiles/baseStation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o -MF CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o.d -o CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o -c /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.cpp
+CMakeFiles/baseStation.dir/DisplayObserver.cpp.o: CMakeFiles/baseStation.dir/flags.make
+CMakeFiles/baseStation.dir/DisplayObserver.cpp.o: /home/filiphuser/Desktop/BaseStation/DisplayObserver.cpp
+CMakeFiles/baseStation.dir/DisplayObserver.cpp.o: CMakeFiles/baseStation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/baseStation.dir/DisplayObserver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/baseStation.dir/DisplayObserver.cpp.o -MF CMakeFiles/baseStation.dir/DisplayObserver.cpp.o.d -o CMakeFiles/baseStation.dir/DisplayObserver.cpp.o -c /home/filiphuser/Desktop/BaseStation/DisplayObserver.cpp
 
-CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.cpp > CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.i
+CMakeFiles/baseStation.dir/DisplayObserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/baseStation.dir/DisplayObserver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filiphuser/Desktop/BaseStation/DisplayObserver.cpp > CMakeFiles/baseStation.dir/DisplayObserver.cpp.i
 
-CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filiphuser/Desktop/BaseStation/Include/ABE_ADCPi.cpp -o CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.s
+CMakeFiles/baseStation.dir/DisplayObserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/baseStation.dir/DisplayObserver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filiphuser/Desktop/BaseStation/DisplayObserver.cpp -o CMakeFiles/baseStation.dir/DisplayObserver.cpp.s
 
 CMakeFiles/baseStation.dir/Joystick.cpp.o: CMakeFiles/baseStation.dir/flags.make
 CMakeFiles/baseStation.dir/Joystick.cpp.o: /home/filiphuser/Desktop/BaseStation/Joystick.cpp
@@ -223,10 +223,24 @@ CMakeFiles/baseStation.dir/ThreadsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/baseStation.dir/ThreadsManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filiphuser/Desktop/BaseStation/ThreadsManager.cpp -o CMakeFiles/baseStation.dir/ThreadsManager.cpp.s
 
+CMakeFiles/baseStation.dir/Utilities.cpp.o: CMakeFiles/baseStation.dir/flags.make
+CMakeFiles/baseStation.dir/Utilities.cpp.o: /home/filiphuser/Desktop/BaseStation/Utilities.cpp
+CMakeFiles/baseStation.dir/Utilities.cpp.o: CMakeFiles/baseStation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/baseStation.dir/Utilities.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/baseStation.dir/Utilities.cpp.o -MF CMakeFiles/baseStation.dir/Utilities.cpp.o.d -o CMakeFiles/baseStation.dir/Utilities.cpp.o -c /home/filiphuser/Desktop/BaseStation/Utilities.cpp
+
+CMakeFiles/baseStation.dir/Utilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/baseStation.dir/Utilities.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filiphuser/Desktop/BaseStation/Utilities.cpp > CMakeFiles/baseStation.dir/Utilities.cpp.i
+
+CMakeFiles/baseStation.dir/Utilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/baseStation.dir/Utilities.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filiphuser/Desktop/BaseStation/Utilities.cpp -o CMakeFiles/baseStation.dir/Utilities.cpp.s
+
 CMakeFiles/baseStation.dir/main.cpp.o: CMakeFiles/baseStation.dir/flags.make
 CMakeFiles/baseStation.dir/main.cpp.o: /home/filiphuser/Desktop/BaseStation/main.cpp
 CMakeFiles/baseStation.dir/main.cpp.o: CMakeFiles/baseStation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/baseStation.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/baseStation.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/baseStation.dir/main.cpp.o -MF CMakeFiles/baseStation.dir/main.cpp.o.d -o CMakeFiles/baseStation.dir/main.cpp.o -c /home/filiphuser/Desktop/BaseStation/main.cpp
 
 CMakeFiles/baseStation.dir/main.cpp.i: cmake_force
@@ -243,13 +257,14 @@ baseStation_OBJECTS = \
 "CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o" \
 "CMakeFiles/baseStation.dir/Director.cpp.o" \
 "CMakeFiles/baseStation.dir/Display.cpp.o" \
-"CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o" \
+"CMakeFiles/baseStation.dir/DisplayObserver.cpp.o" \
 "CMakeFiles/baseStation.dir/Joystick.cpp.o" \
 "CMakeFiles/baseStation.dir/JoystickObserver.cpp.o" \
 "CMakeFiles/baseStation.dir/Server.cpp.o" \
 "CMakeFiles/baseStation.dir/ServerObserver.cpp.o" \
 "CMakeFiles/baseStation.dir/Subject.cpp.o" \
 "CMakeFiles/baseStation.dir/ThreadsManager.cpp.o" \
+"CMakeFiles/baseStation.dir/Utilities.cpp.o" \
 "CMakeFiles/baseStation.dir/main.cpp.o"
 
 # External object files for target baseStation
@@ -259,13 +274,14 @@ baseStation: CMakeFiles/baseStation.dir/BaseStation.cpp.o
 baseStation: CMakeFiles/baseStation.dir/BaseStationBuilder.cpp.o
 baseStation: CMakeFiles/baseStation.dir/Director.cpp.o
 baseStation: CMakeFiles/baseStation.dir/Display.cpp.o
-baseStation: CMakeFiles/baseStation.dir/Include/ABE_ADCPi.cpp.o
+baseStation: CMakeFiles/baseStation.dir/DisplayObserver.cpp.o
 baseStation: CMakeFiles/baseStation.dir/Joystick.cpp.o
 baseStation: CMakeFiles/baseStation.dir/JoystickObserver.cpp.o
 baseStation: CMakeFiles/baseStation.dir/Server.cpp.o
 baseStation: CMakeFiles/baseStation.dir/ServerObserver.cpp.o
 baseStation: CMakeFiles/baseStation.dir/Subject.cpp.o
 baseStation: CMakeFiles/baseStation.dir/ThreadsManager.cpp.o
+baseStation: CMakeFiles/baseStation.dir/Utilities.cpp.o
 baseStation: CMakeFiles/baseStation.dir/main.cpp.o
 baseStation: CMakeFiles/baseStation.dir/build.make
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.6.0
@@ -304,6 +320,8 @@ baseStation: /usr/lib/aarch64-linux-gnu/libopencv_viz.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_wechat_qrcode.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.4.6.0
+baseStation: /usr/lib/aarch64-linux-gnu/libssl.so
+baseStation: /usr/lib/aarch64-linux-gnu/libcrypto.so
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_datasets.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_plot.so.4.6.0
@@ -324,7 +342,7 @@ baseStation: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.6.0
 baseStation: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.6.0
 baseStation: CMakeFiles/baseStation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable baseStation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/filiphuser/Desktop/BaseStation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable baseStation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/baseStation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
